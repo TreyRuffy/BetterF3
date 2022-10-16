@@ -175,7 +175,7 @@
   "text.betterf3.line.biome": "バイオーム",
   "text.betterf3.line.local_difficulty": "地域難易度",
   "text.betterf3.line.clamped": "クランプ",
-  "text.betterf3.line.day_ticks": "Current Day Ticks",
+  "text.betterf3.line.day_ticks": "現在の日時(Tick)",
   "text.betterf3.line.days_played": "経過日数",
   "text.betterf3.line.waiting_chunk": "チャンク読み込みの待機中...",
   "text.betterf3.line.server_tick": "",
