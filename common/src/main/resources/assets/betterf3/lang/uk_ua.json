@@ -196,6 +196,7 @@
   "text.betterf3.line.cpu": "ЦП",
   "text.betterf3.line.display": "Дисплей",
   "text.betterf3.line.gpu": "Відеокарта",
+  "text.betterf3.line.gpu_utilization": "Використання GPU",
   "text.betterf3.line.opengl_version": "Версія OpenGL",
   "text.betterf3.line.gpu_driver": "Драйвер GPU",
   "text.betterf3.line.misc_left": "\"Інше\" зліва",

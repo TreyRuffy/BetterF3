@@ -196,6 +196,7 @@
   "text.betterf3.line.cpu": "CPU",
   "text.betterf3.line.display": "Display",
   "text.betterf3.line.gpu": "GPU",
+  "text.betterf3.line.gpu_utilization": "GPU Utilization",
   "text.betterf3.line.opengl_version": "OpenGL Version",
   "text.betterf3.line.gpu_driver": "GPU Driver",
   "text.betterf3.line.misc_left": "Misc Left",

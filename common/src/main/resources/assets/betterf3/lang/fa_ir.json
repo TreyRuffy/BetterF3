@@ -196,6 +196,7 @@
   "text.betterf3.line.cpu": "پردازنده",
   "text.betterf3.line.display": "نمایش",
   "text.betterf3.line.gpu": "پردازنده‌ی گرافیکی",
+  "text.betterf3.line.gpu_utilization": "GPU Utilization",
   "text.betterf3.line.opengl_version": "نسخه‌ی OpenGL",
   "text.betterf3.line.gpu_driver": "درایور پردازنده‌ی گرافیکی",
   "text.betterf3.line.misc_left": "متفرقه سمت چپ",

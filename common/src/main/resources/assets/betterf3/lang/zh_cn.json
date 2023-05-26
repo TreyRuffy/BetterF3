@@ -196,6 +196,7 @@
   "text.betterf3.line.cpu": "处理器",
   "text.betterf3.line.display": "显示",
   "text.betterf3.line.gpu": "显示卡",
+  "text.betterf3.line.gpu_utilization": "GPU使用率",
   "text.betterf3.line.opengl_version": "OpenGL版本",
   "text.betterf3.line.gpu_driver": "显卡驱动程序",
   "text.betterf3.line.misc_left": "其它左侧",

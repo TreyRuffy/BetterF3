@@ -196,6 +196,7 @@
   "text.betterf3.line.cpu": "ҮП",
   "text.betterf3.line.display": "Тәрәзә",
   "text.betterf3.line.gpu": "ГП",
+  "text.betterf3.line.gpu_utilization": "GPU Utilization",
   "text.betterf3.line.opengl_version": "OpenGL версиясе",
   "text.betterf3.line.gpu_driver": "ГП драйверы",
   "text.betterf3.line.misc_left": "Бүтән сулда",
