@@ -2,7 +2,6 @@ package me.treyruffy.betterf3.mixin;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
-import net.minecraft.client.gui.hud.DebugHud;
 import net.minecraftforge.client.gui.overlay.ForgeGui;
 import org.jetbrains.annotations.NotNull;
 import org.objectweb.asm.Opcodes;
@@ -39,7 +38,7 @@ public abstract class ForgeGuiMixin {
   "Lnet/minecraftforge/client/gui/overlay/ForgeGui$OverlayAccess;update()V"), cancellable = true)
   public void customDebugMenu(final int width, final int height, final DrawContext guiGraphics, final @NotNull CallbackInfo ci) {
     // Sets up BetterF3's debug screen
-    new DebugHud(MinecraftClient.getInstance()).render(guiGraphics);
+    this.getMinecraft().getDebugHud().render(guiGraphics);
 
     this.getMinecraft().getProfiler().pop();
 
