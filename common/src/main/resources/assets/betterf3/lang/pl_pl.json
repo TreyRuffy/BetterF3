@@ -14,7 +14,7 @@
   "config.betterf3.title.config": "Konfiguracja",
   "config.betterf3.title.modules": "Edytuj moduły",
   "config.betterf3.disable": "Wyłącz BetterF3",
-  "config.betterf3.disable.tooltip": "Wyłącz BetterF3 i przywróć standardowe zachowanie klawisza F3",
+  "config.betterf3.disable.tooltip": "Wyłącz BetterF3 i przywróć standardowe zachowanie klawisza F3.",
   "config.betterf3.auto_start": "Autostart",
   "config.betterf3.auto_start.tooltip": "Automatycznie uruchamia menu debugowania po uruchomieniu gry.",
   "config.betterf3.space_modules": "Odstępy",

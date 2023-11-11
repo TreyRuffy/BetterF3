@@ -14,7 +14,7 @@
   "config.betterf3.title.config": "組態",
   "config.betterf3.title.modules": "編輯模組",
   "config.betterf3.disable": "停用模組",
-  "config.betterf3.disable.tooltip": "停用模組，將改回使用原版F3除錯介面。",
+  "config.betterf3.disable.tooltip": "停用 BetterF3 模組，將改回使用原版 F3 抬頭顯示器。",
   "config.betterf3.auto_start": "自動開始",
   "config.betterf3.auto_start.tooltip": "當遊戲開始時，自動啟動除錯功能表。",
   "config.betterf3.space_modules": "間隔模組",
