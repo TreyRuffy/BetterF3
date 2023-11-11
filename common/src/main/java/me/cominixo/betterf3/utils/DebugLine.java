@@ -5,6 +5,7 @@ import java.util.List;
 import net.minecraft.text.Text;
 import net.minecraft.text.TextColor;
 import net.minecraft.util.Language;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A Debug line.
@@ -14,6 +15,7 @@ public class DebugLine {
   private Object value;
   private String format;
   private final String id;
+  private @Nullable String name = null;
 
   /**
    * If active.
@@ -78,7 +80,7 @@ public class DebugLine {
     } else {
       valueStyled = Utils.styledText(this.value, valueColor);
     }
-    if (this.value.toString().equals("")) {
+    if (this.value.toString().isEmpty()) {
       this.active = false;
     }
     return Text.translatable(this.format, nameStyled, valueStyled);
@@ -97,7 +99,7 @@ public class DebugLine {
       // format properly if value is a List (bad)
       final List<Object> values = new ArrayList<>();
 
-      if (!name.equals("")) {
+      if (!name.isEmpty()) {
         values.add(Utils.styledText(name, nameColor));
       }
       values.addAll(listValue);
@@ -132,12 +134,24 @@ public class DebugLine {
    * @return the name
    */
   public String name() {
+    if (this.name != null) {
+      return this.name;
+    }
     if (this.id.isEmpty()) {
       this.format = "%s%s";
       return "";
     }
     final Language language = Language.getInstance();
     return language.get("text.betterf3.line." + this.id);
+  }
+
+  /**
+   * Sets name.
+   *
+   * @param name the name
+   */
+  public void name(final String name) {
+    this.name = name;
   }
 
   /**

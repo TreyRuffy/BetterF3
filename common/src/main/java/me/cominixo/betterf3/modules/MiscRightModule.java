@@ -53,7 +53,7 @@ public class MiscRightModule extends BaseModule {
 
     lines.add(0, this.version);
 
-    // boolean that indicates if we're on the "targeted" section, we have no other way of knowing when it starts/ends
+    // boolean indicating if we're on the "targeted" section, we have no other way of knowing when it starts/ends.
     boolean inTargeted = false;
 
     // copy of list for .remove()

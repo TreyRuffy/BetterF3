@@ -24,7 +24,7 @@ loom {
         // betterf3.mixins.json is in the common directory
         // betterf3.forge.mixins.json is in the forge directory
     }
-    launches {
+    runs {
         client {
             property 'mixin.debug', 'true' // Tells forge to have debug on for Mixins
         }
