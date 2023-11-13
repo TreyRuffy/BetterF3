@@ -11,8 +11,8 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/betterf3",
-    "sources": "https://github.com/cominixo/BetterF3.git",
-    "issues": "https://github.com/cominixo/BetterF3/issues/"
+    "sources": "https://github.com/TreyRuffy/BetterF3.git",
+    "issues": "https://github.com/TreyRuffy/BetterF3/issues/"
   },
   "license": "MIT",
   "environment": "client",

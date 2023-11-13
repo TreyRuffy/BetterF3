@@ -388,12 +388,8 @@ public final class ModConfigFile {
     }
 
     if (baseModule instanceof SystemModule systemModule) {
-      if (systemModule.memoryColorToggle == null) {
-        systemModule.memoryColorToggle = moduleConfig.getOrElse("memory_color_toggle", systemModule.defaultMemoryColorToggle);
-      }
-      if (systemModule.timeFormat == null) {
-        systemModule.timeFormat = moduleConfig.getOrElse("time_format", systemModule.defaultTimeFormat);
-      }
+      systemModule.memoryColorToggle = moduleConfig.getOrElse("memory_color_toggle", systemModule.defaultMemoryColorToggle);
+      systemModule.timeFormat = moduleConfig.getOrElse("time_format", systemModule.defaultTimeFormat);
     }
 
     baseModule.enabled = moduleConfig.getOrElse("enabled", true);
@@ -472,6 +468,15 @@ public final class ModConfigFile {
         moduleConfig.set("chunks_disabled_color", chunkModule.disabledColor.getRgb());
       if (chunkModule.totalColor != null)
         moduleConfig.set("total_chunks_color", chunkModule.totalColor.getRgb());
+    }
+
+    if (module instanceof SystemModule systemModule) {
+      if (systemModule.memoryColorToggle != null) {
+        moduleConfig.set("memory_color_toggle", systemModule.memoryColorToggle);
+      }
+      if (systemModule.timeFormat != null) {
+        moduleConfig.set("time_format", systemModule.timeFormat);
+      }
     }
 
     moduleConfig.set("enabled", module.enabled);
