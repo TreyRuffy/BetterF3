@@ -35,7 +35,7 @@
   "config.betterf3.always_enable_profiler.tooltip": "Zawsze włączaj profiler podczas używania F3.",
   "config.betterf3.always_enable_tps_graph": "Zawsze włączaj wykres TPS",
   "config.betterf3.always_enable_tps_graph.tooltip": "Zawsze włączaj wykres TPS przy użyciu F3.",
-  "config.betterf3.always_enable_tps_graph.tooltip_new": "Zawsze włączaj wykres TPS, gdy używasz klawisza F3. Nie można używać z wykresem pingów.",
+  "config.betterf3.always_enable_tps_graph.tooltip_new": "Zawsze włączaj wykres TPS, gdy używasz klawisza F3. Nie można używać z wykresem ping.",
   "config.betterf3.always_enable_ping_graph": "Zawsze włączaj wykres ping",
   "config.betterf3.always_enable_ping_graph.tooltip": "Zawsze włączaj wykres ping, gdy używasz klawisza F3. Nie można używać z wykresem TPS.",
   "config.betterf3.fontScale": "Skala czcionki",
