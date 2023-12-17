@@ -133,6 +133,8 @@
   "text.betterf3.line.block_coords": "方块",
   "text.betterf3.line.chunk_relative_coords": "区块相对坐标",
   "text.betterf3.line.chunk_coords": "区块坐标",
+  "text.betterf3.line.velocity": "速度",
+  "text.betterf3.line.abs_velocity": "绝对速度",
   "text.betterf3.line.particles": "粒子效果",
   "text.betterf3.line.entities": "实体",
   "text.betterf3.line.monster": "怪物",
