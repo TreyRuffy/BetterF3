@@ -133,6 +133,8 @@
   "text.betterf3.line.block_coords": "ブロック",
   "text.betterf3.line.chunk_relative_coords": "チャンク内の相対座標",
   "text.betterf3.line.chunk_coords": "チャンクの座標",
+  "text.betterf3.line.velocity": "Velocity",
+  "text.betterf3.line.abs_velocity": "Absolute Velocity",
   "text.betterf3.line.particles": "パーティクル",
   "text.betterf3.line.entities": "エンティティ",
   "text.betterf3.line.monster": "敵対Mob",

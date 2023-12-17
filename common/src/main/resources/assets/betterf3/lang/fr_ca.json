@@ -133,6 +133,8 @@
   "text.betterf3.line.block_coords": "Bloc",
   "text.betterf3.line.chunk_relative_coords": "Relatives au tronçon",
   "text.betterf3.line.chunk_coords": "Coordonnées du tronçon",
+  "text.betterf3.line.velocity": "Velocity",
+  "text.betterf3.line.abs_velocity": "Absolute Velocity",
   "text.betterf3.line.particles": "Particules",
   "text.betterf3.line.entities": "Entités",
   "text.betterf3.line.monster": "Monstres",

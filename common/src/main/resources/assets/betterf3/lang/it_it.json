@@ -133,6 +133,8 @@
   "text.betterf3.line.block_coords": "Blocco",
   "text.betterf3.line.chunk_relative_coords": "Chunk Relativo",
   "text.betterf3.line.chunk_coords": "Coordinate del Chunk",
+  "text.betterf3.line.velocity": "Velocity",
+  "text.betterf3.line.abs_velocity": "Absolute Velocity",
   "text.betterf3.line.particles": "Particelle",
   "text.betterf3.line.entities": "Entità",
   "text.betterf3.line.monster": "Mostri",
