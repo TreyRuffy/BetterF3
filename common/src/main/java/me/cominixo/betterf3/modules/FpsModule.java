@@ -1,6 +1,7 @@
 package me.cominixo.betterf3.modules;
 
 import java.util.Collections;
+import me.cominixo.betterf3.mixin.ClientAccessor;
 import me.cominixo.betterf3.utils.DebugLine;
 import me.cominixo.betterf3.utils.Utils;
 import net.minecraft.client.MinecraftClient;
@@ -62,7 +63,7 @@ public class FpsModule extends BaseModule {
    * @param client the Minecraft client
    */
   public void update(final MinecraftClient client) {
-    final int currentFps = Integer.parseInt(client.fpsDebugString.split(" ")[0].split("/")[0].trim());
+    final int currentFps = ClientAccessor.betterF3$getCurrentFps();
 
     final String fpsString = I18n
       .translate("format.betterf3.fps", currentFps,
