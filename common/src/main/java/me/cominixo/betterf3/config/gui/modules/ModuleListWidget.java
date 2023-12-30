@@ -35,12 +35,12 @@ public class ModuleListWidget extends AlwaysSelectedEntryListWidget<ModuleListWi
    * @param client        the Minecraft client
    * @param width         the width
    * @param height        the height
-   * @param top           the top
-   * @param bottom        the bottom
+   * @param y             the y
+   * @param itemHeight    the itemHeight
    */
   public ModuleListWidget(final ModulesScreen modulesScreen, final MinecraftClient client, final int width,
-                          final int height, final int top, final int bottom) {
-    super(client, width, height, top, bottom);
+                          final int height, final int y, final int itemHeight) {
+    super(client, width, height, y, itemHeight);
     this.modulesScreen = modulesScreen;
   }
 

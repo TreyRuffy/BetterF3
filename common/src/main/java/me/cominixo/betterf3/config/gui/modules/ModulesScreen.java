@@ -50,11 +50,11 @@ public class ModulesScreen extends Screen {
     super.init();
 
     if (this.initialized) {
-      this.modulesListWidget.setDimensionsAndPosition(this.width, this.height, 32, this.height - 64);
+      this.modulesListWidget.setDimensionsAndPosition(this.width, this.height - 64 - 32, 0, 32);
       this.modulesListWidget.updateModules();
     } else {
       this.initialized = true;
-      this.modulesListWidget = new ModuleListWidget(this, this.client, this.width, this.height, 32, this.height - 64);
+      this.modulesListWidget = new ModuleListWidget(this, this.client, this.width, this.height - 64 - 32, 32, 36);
       if (this.side == PositionEnum.LEFT) {
         this.modulesListWidget.modules(BaseModule.modules);
       } else if (this.side == PositionEnum.RIGHT) {
