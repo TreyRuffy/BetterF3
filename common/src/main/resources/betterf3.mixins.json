@@ -2,10 +2,9 @@
   "required": true,
   "package": "me.cominixo.betterf3.mixin",
   "compatibilityLevel": "JAVA_17",
-  "minVersion": "0.8.4",
+  "minVersion": "0.8",
   "client": [
     "ClientAccessor",
-    "DebugMixin",
     "KeyboardMixin",
     "autof3.DebugOptionMixin",
     "bossbar.BossbarMixin",

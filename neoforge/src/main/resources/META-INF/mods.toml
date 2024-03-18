@@ -1,7 +1,7 @@
 modLoader = "javafml"
 loaderVersion = "*"
 license = "MIT"
-displayURL="https://github.com/TreyRuffy/BetterF3/"
+displayURL = "https://github.com/TreyRuffy/BetterF3/"
 issueTrackerURL="https://github.com/TreyRuffy/BetterF3/issues/"
 
 [[mods]]
@@ -13,7 +13,7 @@ displayURL="https://modrinth.com/mod/betterf3"
 logoFile="icon.png"
 authors = "TreyRuffy and cominixo"
 description = '''
-Better F3 for Minecraft Forge
+Better F3 for Minecraft NeoForge
 Replaces Minecraft's original debug HUD with a highly customizable, more human-readable HUD.
 
 The creator would like to thank:
@@ -21,12 +21,14 @@ The creator would like to thank:
 - Nirewen for creating the icon
 '''
 
-[[dependencies.betterf3]]
-modId = "forge"
-mandatory = true
-versionRange = "[48,)"
-ordering = "NONE"
-side = "CLIENT"
+[[accessTransformers]]
+file = "META-INF/accesstransformer.cfg"
+
+[[mixins]]
+config = "betterf3.neoforge.mixins.json"
+
+[[mixins]]
+config = "betterf3.mixins.json"
 
 [[dependencies.betterf3]]
 modId = "minecraft"

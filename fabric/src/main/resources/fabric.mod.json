@@ -32,5 +32,5 @@
     "modmenu": ">=8.0.0"
   },
   "accessWidener" : "betterf3.accesswidener",
-  "mixins": ["betterf3.mixins.json", "betterf3.fabric.mixins.json"]
+  "mixins": ["betterf3.mixins.json", "betterf3.fabric.mixins.json", "betterf3.forgefabric.mixins.json"]
 }

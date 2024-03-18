@@ -7,41 +7,40 @@ configurations {
     shadowCommon // Don't use shadow from the shadow plugin because we don't want IDEA to index this.
     compileClasspath.extendsFrom common
     runtimeClasspath.extendsFrom common
-    developmentForge.extendsFrom common
+    developmentNeoForge.extendsFrom common
 }
 
 architectury {
     platformSetupLoomIde()
-    forge() // Tells Architectury this is a Forge mod
+    neoForge() // Tells Architectury this is a NeoForge mod
 }
 
 loom {
-    forge {
-        mixinConfigs = [
-                "betterf3.mixins.json",
-                "betterf3.forge.mixins.json",
-                "betterf3.forgefabric.mixins.json"
-        ] // Mixin files used for this Forge Mod
-        // betterf3.mixins.json is in the common directory
-        // betterf3.forge.mixins.json is in the forge directory
-    }
     runs {
         client {
-            property 'mixin.debug', 'true' // Tells forge to have debug on for Mixins
+            property 'mixin.debug', 'true' // Tells neoforge to have debug on for Mixins
         }
     }
 }
 
 repositories {
     maven { url "https://maven.shedaniel.me/" } // Repository for cloth-config
+    maven { url "https://maven.neoforged.net/releases/" } // NeoForge Maven Repository
 }
 
 dependencies {
-    // Minecraft Forge API
-    forge "net.minecraftforge:forge:${rootProject.minecraft_version}-${rootProject.forge_version}"
+    modules { // https://github.com/google/guava/issues/6618 - Fix duplicate classes error
+        module("com.google.guava:listenablefuture") {
+            replacedBy("com.google.guava:guava", "listenablefuture is part of guava")
+        }
+    }
+    // Minecraft NeoForge API
+    neoForge "net.neoforged:neoforge:${rootProject.neoforge_version}", {
+        exclude module: 'guava'
+    }
 
     common(project(path: ":common", configuration: "namedElements")) { transitive false }
-    shadowCommon(project(path: ":common", configuration: "transformProductionForge")) { transitive = false }
+    shadowCommon(project(path: ":common", configuration: "transformProductionNeoForge")) { transitive = false }
 }
 
 processResources {
@@ -56,7 +55,7 @@ processResources {
 shadowJar {
     // Excludes these files from the JAR file
     exclude "fabric.mod.json"
-    exclude "betterf3.accesswidener"
+    exclude "betterf3.mixins.forgefabric.json"
 
     configurations = [project.configurations.shadowCommon]
     archiveClassifier.set("dev-shadow")
@@ -65,7 +64,7 @@ shadowJar {
 remapJar {
     inputFile.set(shadowJar.archiveFile)
     dependsOn(shadowJar)
-    archiveClassifier.set("Forge-${rootProject.minecraft_version}")
+    archiveClassifier.set("NeoForge-${rootProject.minecraft_version}")
 
     from rootProject.file("LICENSE.md")
 }
@@ -94,12 +93,12 @@ publishing {
 
 unifiedPublishing {
     project {
-        displayName.set("BetterF3 MinecraftForge v${project.version} (${project.supported_minecraft_versions})")
+        displayName.set("BetterF3 NeoForge v${project.version} (${project.supported_minecraft_versions})")
         version = project.version
         changelog = releaseChangelog()
         List<String> mcVersions = project.supported_minecraft_versions_list.split(",")
         gameVersions.set(mcVersions)
-        gameLoaders = ["forge"]
+        gameLoaders = ["neoforge"]
 
         mainPublication tasks.remapJar
 
