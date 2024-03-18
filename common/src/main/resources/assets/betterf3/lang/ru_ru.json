@@ -133,6 +133,8 @@
   "text.betterf3.line.block_coords": "Координаты блока",
   "text.betterf3.line.chunk_relative_coords": "Относительно чанка",
   "text.betterf3.line.chunk_coords": "Координаты чанка",
+  "text.betterf3.line.velocity": "Скорость",
+  "text.betterf3.line.abs_velocity": "Абсолютная скорость",
   "text.betterf3.line.particles": "Частиц",
   "text.betterf3.line.entities": "Сущностей",
   "text.betterf3.line.monster": "Монстров",
