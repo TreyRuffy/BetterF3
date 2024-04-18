@@ -5,10 +5,12 @@ import me.cominixo.betterf3.utils.DebugLine;
 import me.cominixo.betterf3.utils.Utils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 
 /**
@@ -59,6 +61,7 @@ public class CoordsModule extends BaseModule {
     lines.add(new DebugLine("chunk_coords", "format.betterf3.coords", true));
     lines.add(new DebugLine("velocity", "format.betterf3.coords", true));
     lines.add(new DebugLine("abs_velocity"));
+    lines.add(new DebugLine("other_dimension_coords", "format.betterf3.coords", true));
 
     lines.get(2).inReducedDebug = true;
   }
@@ -105,6 +108,22 @@ public class CoordsModule extends BaseModule {
       lines.get(4).value(Arrays.asList(Utils.styledText(vX, this.colorX),
       Utils.styledText(vY, this.colorY), Utils.styledText(vZ, this.colorZ)));
       lines.get(5).value(Utils.styledText(String.format("%.3f", velocity.length() * ticksPerSecond), this.defaultNameColor));
+
+      // Other dimension coords (nether coords when in overworld and vise versa)
+      final var dimension = client.level.dimension();
+      if (dimension == Level.OVERWORLD || dimension == Level.NETHER) {
+        final float dimensionalMultiplier = dimension == Level.OVERWORLD ? 1f / 8f : 8f;
+        final String lable = I18n.get("text.betterf3.line." +
+          (dimension == Level.OVERWORLD ? "nether" : "overworld"));
+
+        final String cameraOtherDimX = String.format("%.3f", cameraEntity.getX() * dimensionalMultiplier);
+        final String cameraOtherDimZ = String.format("%.3f", cameraEntity.getZ() * dimensionalMultiplier);
+
+        lines.get(6).value(Arrays.asList(lable, Utils.styledText(cameraOtherDimX, this.colorX),
+          Utils.styledText(cameraY, this.colorY), Utils.styledText(cameraOtherDimZ, this.colorZ)));
+      } else {
+        lines.get(6).active = false;
+      }
     }
   }
 }
