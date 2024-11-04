@@ -1,8 +1,8 @@
 {
-  "format.betterf3.default_format": "%s: %s",
+  "format.betterf3.default_format": "%s：%s",
   "format.betterf3.default_no_colon": "%s %s",
-  "format.betterf3.total": "%s %s/%s: %s/%s",
-  "format.betterf3.coords": "%s: %s  %s  %s",
+  "format.betterf3.total": "%s %s/%s：%s/%s",
+  "format.betterf3.coords": "%s：%s  %s  %s",
   "format.betterf3.server_tick": "%s at %.0f ms ticks",
   "format.betterf3.no_format": "%s",
   "format.betterf3.fps": "%s fps / %s fps %s",
