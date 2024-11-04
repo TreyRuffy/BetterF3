@@ -135,7 +135,7 @@
   "text.betterf3.line.chunk_coords": "區塊座標",
   "text.betterf3.line.velocity": "速度",
   "text.betterf3.line.absolute_velocity": "絕對速度",
-  "text.betterf3.line.horizontal_velocity": "Horizontal Velocity",
+  "text.betterf3.line.horizontal_velocity": "水平速度",
   "text.betterf3.line.particles": "粒子",
   "text.betterf3.line.entities": "實體",
   "text.betterf3.line.monster": "怪物",

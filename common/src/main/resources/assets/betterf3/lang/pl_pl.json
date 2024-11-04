@@ -135,7 +135,7 @@
   "text.betterf3.line.chunk_coords": "Pozycja chunku",
   "text.betterf3.line.velocity": "Prędkość",
   "text.betterf3.line.absolute_velocity": "Prędkość bezwzględna",
-  "text.betterf3.line.horizontal_velocity": "Horizontal Velocity",
+  "text.betterf3.line.horizontal_velocity": "Prędkość pozioma",
   "text.betterf3.line.particles": "Cząsteczki",
   "text.betterf3.line.entities": "Obiekty",
   "text.betterf3.line.monster": "Potwory",
