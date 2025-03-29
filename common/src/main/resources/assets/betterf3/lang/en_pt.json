@@ -13,7 +13,7 @@
   "config.betterf3.title.general": "General",
   "config.betterf3.title.config": "Config",
   "config.betterf3.title.modules": "Edit Modules",
-  "config.betterf3.disable": "Disable Mod",
+  "config.betterf3.disable": "Hide th' mod",
   "config.betterf3.disable.tooltip": "Disables the mod, this will make the vanilla F3 HUD appear again.",
   "config.betterf3.auto_start": "Auto Start",
   "config.betterf3.auto_start.tooltip": "Automatically starts the debug menu when the game starts.",
