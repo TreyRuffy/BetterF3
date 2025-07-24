@@ -59,6 +59,22 @@ public final class Utils {
   }
 
   /**
+   * Gets tps color.
+   *
+   * @param currentTps the current tps
+   * @return the tps color
+   */
+  public static FpsEnum tpsColor(final int currentTps) {
+    if (currentTps >= 19) {
+      return FpsEnum.HIGH;
+    } else if (currentTps >= 10) {
+      return FpsEnum.MEDIUM;
+    } else {
+      return FpsEnum.LOW;
+    }
+  }
+
+  /**
    * Gets percent color.
    *
    * @param percent the percent

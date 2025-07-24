@@ -12,6 +12,7 @@
     "chunk.ClientChunkManagerMixin",
     "chunk.ClientChunkMapMixin",
     "debugcrosshair.DebugCrosshairMixin",
-    "scoreboard.ScoreboardMixin"
+    "scoreboard.ScoreboardMixin",
+    "time.TimeUpdateMixin"
   ]
 }
