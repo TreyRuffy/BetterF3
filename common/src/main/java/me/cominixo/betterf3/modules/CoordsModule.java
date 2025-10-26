@@ -104,7 +104,7 @@ public class CoordsModule extends BaseModule {
     Utils.styledText(blockPos.getY() >> 4, this.colorY), Utils.styledText(blockPos.getZ() >> 4, this.colorZ)));
     // Player velocity
     final Entity vehicle = cameraEntity.getRootVehicle();
-    final int ticksPerSecond = 20;
+    final int ticksPerSecond = Math.min(client.getFps(), 20);
     if (client.level != null) {
       final Vec3 currentPos = new Vec3(vehicle.getX(), vehicle.getY(), vehicle.getZ());
       final long ticksSincePositionChange = client.level.getGameTime() - this.positionUpdateTime;
