@@ -14,7 +14,7 @@
   "config.betterf3.title.config": "Cấu hình",
   "config.betterf3.title.modules": "Chỉnh sửa mô-đun",
   "config.betterf3.disable": "Tắt Mod",
-  "config.betterf3.disable.tooltip": "Tháo gỡ các bản mod, điều này sẽ làm cho vanilla F3 HUD xuất hiện trở lại.",
+  "config.betterf3.disable.tooltip": "Tắt mod, việc này sẽ làm cho màn hình F3 của vanilla xuất hiện trở lại.",
   "config.betterf3.auto_start": "Tự động khởi động",
   "config.betterf3.auto_start.tooltip": "Tự động khởi động trình đơn gỡ lỗi khi trò chơi bắt đầu.",
   "config.betterf3.space_modules": "Mô-đun dấu cách",
