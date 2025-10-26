@@ -104,7 +104,7 @@ public class CoordsModule extends BaseModule {
     Utils.styledText(blockPos.getY() >> 4, this.colorY), Utils.styledText(blockPos.getZ() >> 4, this.colorZ)));
     // Player velocity
     final Entity vehicle = cameraEntity.getRootVehicle();
-    final int ticksPerSecond = Math.min(client.getFps(), 20);
+    final int velocityMultiplier = Math.min(client.getFps(), 20); // 20 ticks per second
     if (client.level != null) {
       final Vec3 currentPos = new Vec3(vehicle.getX(), vehicle.getY(), vehicle.getZ());
       final long ticksSincePositionChange = client.level.getGameTime() - this.positionUpdateTime;
@@ -118,13 +118,13 @@ public class CoordsModule extends BaseModule {
     } else {
       this.velocity = Vec3.ZERO;
     }
-    final String vX = String.format("%.3f", this.velocity.x() * ticksPerSecond);
-    final String vY = String.format("%.3f", this.velocity.y() * ticksPerSecond);
-    final String vZ = String.format("%.3f", this.velocity.z() * ticksPerSecond);
+    final String vX = String.format("%.3f", this.velocity.x() * velocityMultiplier);
+    final String vY = String.format("%.3f", this.velocity.y() * velocityMultiplier);
+    final String vZ = String.format("%.3f", this.velocity.z() * velocityMultiplier);
     lines.get(4).value(Arrays.asList(Utils.styledText(vX, this.colorX),
     Utils.styledText(vY, this.colorY), Utils.styledText(vZ, this.colorZ)));
-    lines.get(5).value(Utils.styledText(String.format("%.3f", this.velocity.length() * ticksPerSecond), this.defaultNameColor));
+    lines.get(5).value(Utils.styledText(String.format("%.3f", this.velocity.length() * velocityMultiplier), this.defaultNameColor));
     final Vec3 horizontalVelocity = new Vec3(this.velocity.x(), 0, this.velocity.z());
-    lines.get(6).value(Utils.styledText(String.format("%.3f", horizontalVelocity.length() * ticksPerSecond), this.defaultNameColor));
+    lines.get(6).value(Utils.styledText(String.format("%.3f", horizontalVelocity.length() * velocityMultiplier), this.defaultNameColor));
   }
 }
