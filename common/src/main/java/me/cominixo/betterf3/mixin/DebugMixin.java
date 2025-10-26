@@ -5,12 +5,9 @@ import net.minecraft.Util;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.DebugScreenOverlay;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
-import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -26,8 +23,6 @@ import static me.cominixo.betterf3.utils.Utils.xPos;
 @Mixin(DebugScreenOverlay.class)
 public abstract class DebugMixin {
 
-  @Unique
-  private static final Logger betterF3$log = LoggerFactory.getLogger(DebugMixin.class);
   /**
    * Toggles the debug HUD.
    */
@@ -42,7 +37,7 @@ public abstract class DebugMixin {
    */
   @Inject(method = "render", at = @At(value = "HEAD"))
   public void renderBefore(final GuiGraphics context, final CallbackInfo ci) {
-    if (GeneralOptions.disableMod) {
+    if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isF3Visible()) {
       return;
     }
     context.pose().pushMatrix();
@@ -56,7 +51,7 @@ public abstract class DebugMixin {
    */
   @Inject(method = "render", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/debug/DebugScreenEntryList;getCurrentlyEnabled()Ljava/util/Collection;", shift = At.Shift.AFTER))
   public void renderFontScaleBefore(final GuiGraphics context, final CallbackInfo ci) {
-    if (!GeneralOptions.disableMod) {
+    if (!GeneralOptions.disableMod && this.minecraft.debugEntries.isF3Visible()) {
       context.pose().scale((float) GeneralOptions.fontScale, (float) GeneralOptions.fontScale);
     }
   }

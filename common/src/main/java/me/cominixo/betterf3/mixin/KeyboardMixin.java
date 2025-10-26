@@ -83,7 +83,7 @@ public abstract class KeyboardMixin {
       } else {
         closingAnimation = false;
         xPos = START_X_POS;
-        this.minecraft.debugEntries.toggleF3Visible();
+        this.minecraft.debugEntries.setF3Visible(true);
       }
     } else {
       this.minecraft.debugEntries.toggleF3Visible();

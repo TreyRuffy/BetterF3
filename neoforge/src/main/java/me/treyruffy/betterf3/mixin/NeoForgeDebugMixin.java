@@ -40,7 +40,7 @@ public abstract class NeoForgeDebugMixin {
   @Inject(method = "renderLines", at = @At(value = "HEAD"), cancellable = true, order = 2000)
   public void drawText(final GuiGraphics guiGraphics, final List<String> list, final boolean bl, final CallbackInfo ci) {
 
-    if (GeneralOptions.disableMod) {
+    if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isF3Visible()) {
       return;
     }
 

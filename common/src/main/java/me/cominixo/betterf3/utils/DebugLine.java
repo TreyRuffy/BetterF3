@@ -75,8 +75,8 @@ public class DebugLine {
     final Component nameStyled = Utils.styledText(name, nameColor);
     final Component valueStyled;
 
-    if (this.value instanceof Component) {
-      valueStyled = (Component) this.value;
+    if (this.value instanceof Component component) {
+      valueStyled = component;
     } else {
       valueStyled = Utils.styledText(this.value, valueColor);
     }
