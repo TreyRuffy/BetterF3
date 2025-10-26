@@ -6,3 +6,4 @@ accessible field net/minecraft/client/renderer/LevelRenderer viewArea Lnet/minec
 accessible field net/minecraft/client/gui/components/debug/DebugEntryHeightmap HEIGHTMAP_NAMES Ljava/util/Map;
 accessible field net/minecraft/client/gui/components/DebugScreenOverlay renderFpsCharts Z
 accessible field net/minecraft/client/gui/components/DebugScreenOverlay renderProfilerChart Z
+accessible method net/minecraft/client/gui/components/debug/DebugScreenEntries register (Ljava/lang/String;Lnet/minecraft/client/gui/components/debug/DebugScreenEntry;)Lnet/minecraft/resources/ResourceLocation;
