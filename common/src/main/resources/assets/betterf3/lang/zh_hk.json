@@ -72,7 +72,7 @@
   "config.betterf3.color.help.disabled.tooltip": "Change the color of the text when help options are disabled.",
   "config.betterf3.color.sound.maximum": "最大顏色",
   "config.betterf3.color.sound.maximum.tooltip": "Change the color of the text for the maximum number of sounds.",
-  "config.betterf3.color.background": "Background Color",
+  "config.betterf3.color.background": "背景顏色",
   "config.betterf3.color.background.tooltip": "變更每一行的背景顏色 (ARGB)",
   "config.betterf3.memory_color_toggle": "記憶體顏色切換",
   "config.betterf3.memory_color_toggle.tooltip": "Enables the color change of the memory value based on the percentage of memory used.",
