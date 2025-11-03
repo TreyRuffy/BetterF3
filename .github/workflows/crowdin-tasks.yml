@@ -10,9 +10,11 @@ on:
     #        │ │ │ │ │                                   7 is also Sunday on some systems)
     #        │ │ │ │ │
     #        │ │ │ │ │
-    - cron: '0 0 * * *'
+    - cron: '15 6 * * 5'
   workflow_dispatch:
   push:
+    branches:
+      - 'architectury/**'
 
 jobs:
   crowdin-tasks:
