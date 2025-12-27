@@ -6,7 +6,7 @@ import net.minecraft.client.CloudStatus;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.network.chat.TextColor;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.apache.commons.lang3.StringUtils;
 
 /**
@@ -47,14 +47,14 @@ public class GraphicsModule extends BaseModule {
     // Render Distance
     lines.get(0).value(client.levelRenderer.lastViewDistance);
     // Graphics
-    lines.get(1).value(StringUtils.capitalize(client.options.graphicsMode().get().toString()));
+    lines.get(1).value(StringUtils.capitalize(client.options.graphicsPreset().get().toString()));
     // Clouds
     lines.get(2).value(cloudString);
     // Biome Blend Radius
     lines.get(3).value(client.options.biomeBlendRadius().get());
 
     // Shader
-    final ResourceLocation shaderEffect = client.gameRenderer.currentPostEffect();
+    final Identifier shaderEffect = client.gameRenderer.currentPostEffect();
     if (shaderEffect != null) {
       lines.get(4).value(String.valueOf(shaderEffect));
     } else {

@@ -12,7 +12,7 @@ import net.minecraft.client.gui.components.ObjectSelectionList;
 import net.minecraft.client.input.MouseButtonEvent;
 import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
+import net.minecraft.resources.Identifier;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -220,17 +220,17 @@ public class ModuleListWidget extends ObjectSelectionList<ModuleListWidget.Modul
 
         if (index > 0) {
           if (v < 16 && w < 16) {
-            context.blitSprite(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("server_list/move_up_highlighted"), x, y, 32, 32);
+            context.blitSprite(RenderPipelines.GUI_TEXTURED, Identifier.parse("server_list/move_up_highlighted"), x, y, 32, 32);
           } else {
-            context.blitSprite(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("server_list/move_up"), x, y, 32, 32);
+            context.blitSprite(RenderPipelines.GUI_TEXTURED, Identifier.parse("server_list/move_up"), x, y, 32, 32);
           }
         }
 
         if (index < ModuleListWidget.this.moduleEntries.size() - 1) {
           if (v < 16 && w > 16) {
-            context.blitSprite(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("server_list/move_down_highlighted"), x, y, 32, 32);
+            context.blitSprite(RenderPipelines.GUI_TEXTURED, Identifier.parse("server_list/move_down_highlighted"), x, y, 32, 32);
           } else {
-            context.blitSprite(RenderPipelines.GUI_TEXTURED, ResourceLocation.parse("server_list/move_down"), x, y, 32, 32);
+            context.blitSprite(RenderPipelines.GUI_TEXTURED, Identifier.parse("server_list/move_down"), x, y, 32, 32);
           }
         }
       }

@@ -3,7 +3,7 @@ package me.cominixo.betterf3.utils;
 import java.util.Arrays;
 import java.util.Map;
 import net.minecraft.ChatFormatting;
-import net.minecraft.Util;
+import net.minecraft.util.Util;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;

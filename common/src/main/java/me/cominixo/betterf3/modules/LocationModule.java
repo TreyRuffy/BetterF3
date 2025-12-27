@@ -173,7 +173,7 @@ public class LocationModule extends BaseModule {
     }
 
     // Dimension
-    lines.getFirst().value(client.level.dimension().location());
+    lines.getFirst().value(client.level.dimension().identifier());
 
     final Direction facing = cameraEntity.getDirection();
 
