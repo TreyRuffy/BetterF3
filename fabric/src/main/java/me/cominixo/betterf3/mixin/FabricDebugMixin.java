@@ -40,7 +40,7 @@ public abstract class FabricDebugMixin {
   @Inject(method = "renderLines", at = @At("HEAD"), cancellable = true)
   public void drawText(final GuiGraphics guiGraphics, final List<String> list, final boolean bl, final CallbackInfo ci) {
 
-    if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isF3Visible()) {
+    if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isOverlayVisible()) {
       return;
     }
 

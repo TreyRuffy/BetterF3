@@ -49,7 +49,7 @@ public class ModConfigScreen extends Screen {
     this.addRenderableWidget(doneButton);
 
     if (minecraft != null && minecraft.level != null && !minecraft.getDebugOverlay().showDebugScreen()) {
-      minecraft.debugEntries.toggleF3Visible();
+      minecraft.debugEntries.toggleDebugOverlay();
     }
   }
 

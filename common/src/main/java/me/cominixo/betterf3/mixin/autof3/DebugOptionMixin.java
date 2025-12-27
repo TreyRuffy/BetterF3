@@ -38,7 +38,7 @@ public abstract class DebugOptionMixin {
   @Inject(method = "<init>", at = @At("RETURN"))
   public void addAutomaticDebugOption(final Minecraft minecraft, final CallbackInfo ci) {
     if (!GeneralOptions.disableMod && GeneralOptions.autoF3) {
-      this.minecraft.debugEntries.setF3Visible(true);
+      this.minecraft.debugEntries.setOverlayVisible(true);
       if (GeneralOptions.alwaysEnableProfiler) this.renderProfilerChart = true;
       if (GeneralOptions.alwaysEnableTPS) this.renderFpsCharts = true;
       if (GeneralOptions.alwaysEnablePing) this.toggleNetworkCharts();
@@ -48,7 +48,7 @@ public abstract class DebugOptionMixin {
   @Inject(method = "reset", at = @At("RETURN"))
   private void automaticF3(final CallbackInfo ci) {
     if (!GeneralOptions.disableMod && GeneralOptions.autoF3) {
-      this.minecraft.debugEntries.setF3Visible(true);
+      this.minecraft.debugEntries.setOverlayVisible(true);
       if (GeneralOptions.alwaysEnableProfiler) this.renderProfilerChart = true;
       if (GeneralOptions.alwaysEnableTPS) this.renderFpsCharts = true;
       if (GeneralOptions.alwaysEnablePing) this.toggleNetworkCharts();
@@ -57,7 +57,7 @@ public abstract class DebugOptionMixin {
 
   @Inject(method = "showDebugScreen", at = @At("HEAD"), cancellable = true)
   private void shouldRenderDebug(final CallbackInfoReturnable<Boolean> cir) {
-    if (!GeneralOptions.disableMod && GeneralOptions.autoF3 && this.minecraft.debugEntries.isF3Visible() && !this.minecraft.options.hideGui) {
+    if (!GeneralOptions.disableMod && GeneralOptions.autoF3 && this.minecraft.debugEntries.isOverlayVisible() && !this.minecraft.options.hideGui) {
       cir.setReturnValue(this.minecraft.level != null);
     }
   }

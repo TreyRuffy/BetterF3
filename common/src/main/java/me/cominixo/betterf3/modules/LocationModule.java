@@ -17,13 +17,16 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.attribute.EnvironmentAttributes;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
+import net.minecraft.world.level.MoonPhase;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.level.chunk.status.ChunkStatus;
+import net.minecraft.world.level.dimension.DimensionType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.WorldgenRandom;
 import net.minecraft.world.level.lighting.LevelLightEngine;
@@ -156,7 +159,8 @@ public class LocationModule extends BaseModule {
         final float moonSize;
         final long inhabitedTime;
 
-        moonSize = serverWorld.getMoonBrightness();
+        final MoonPhase moonPhase = serverWorld.environmentAttributes().getDimensionValue(EnvironmentAttributes.MOON_PHASE);
+        moonSize = DimensionType.MOON_BRIGHTNESS_PER_PHASE[moonPhase.index()];
 
         inhabitedTime = Objects.requireNonNullElse(serverChunk, clientChunk).getInhabitedTime();
 

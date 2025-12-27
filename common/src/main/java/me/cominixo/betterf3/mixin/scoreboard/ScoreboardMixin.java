@@ -25,7 +25,7 @@ public class ScoreboardMixin {
    */
   @Inject(at = @At("HEAD"), method = "displayScoreboardSidebar", cancellable = true)
   public void init(final CallbackInfo info) {
-    if (!GeneralOptions.disableMod && GeneralOptions.hideSidebar && this.minecraft.debugEntries.isF3Visible()) {
+    if (!GeneralOptions.disableMod && GeneralOptions.hideSidebar && this.minecraft.debugEntries.isOverlayVisible()) {
       info.cancel();
     }
   }

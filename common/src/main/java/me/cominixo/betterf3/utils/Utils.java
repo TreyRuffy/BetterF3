@@ -3,12 +3,12 @@ package me.cominixo.betterf3.utils;
 import java.util.Arrays;
 import java.util.Map;
 import net.minecraft.ChatFormatting;
-import net.minecraft.util.Util;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.TextColor;
+import net.minecraft.util.Util;
 import net.minecraft.world.level.block.state.properties.Property;
 import org.apache.commons.lang3.StringUtils;
 
