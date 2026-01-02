@@ -190,7 +190,7 @@
   "text.betterf3.line.server_tick": "",
   "text.betterf3.line.packets_sent": "送信パケット数",
   "text.betterf3.line.packets_received": "受信パケット数",
-  "text.betterf3.line.tick_manager_status": "Tick Manager Status",
+  "text.betterf3.line.tick_manager_status": "",
   "text.betterf3.line.tick_manager_status.normal": "running",
   "text.betterf3.line.tick_manager_status.frozen": "frozen",
   "text.betterf3.line.tick_manager_status.stepping": "frozen - stepping",
