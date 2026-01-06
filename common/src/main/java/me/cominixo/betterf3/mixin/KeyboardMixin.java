@@ -55,22 +55,6 @@ public abstract class KeyboardMixin {
     }
   }
 
-  /**
-   * Adds BetterF3 F3 + Q messages.
-   *
-   * @param keyEvent the keyboard key event
-   * @param cir the callback info
-   */
-  @Inject(method = "handleDebugKeys", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/KeyboardHandler;showDebugChat(Lnet/minecraft/network/chat/Component;)V", shift = At.Shift.AFTER, ordinal = 14))
-  public void processF3Messages(final KeyEvent keyEvent, final CallbackInfoReturnable<Boolean> cir) {
-    if (keyEvent.key() == 81) {
-      this.minecraft.gui.getChat().addMessage(Component.literal(""));
-      this.minecraft.gui.getChat().addMessage(Component.translatable("debug.betterf3.cycle_renderdistance.help"));
-      this.minecraft.gui.getChat().addMessage(Component.translatable("debug.betterf3.cycle_simulationdistance.help"));
-      this.minecraft.gui.getChat().addMessage(Component.translatable("debug.betterf3.modmenu.help"));
-    }
-  }
-
   @Inject(method = "keyPress", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/debug/DebugScreenEntryList;toggleDebugOverlay()V", opcode = Opcodes.PUTFIELD, ordinal = 0), cancellable = true)
   private synchronized void animationAndAlwaysEnableProfiler(final long l, final int i, final KeyEvent keyEvent, final CallbackInfo ci) {
     if (GeneralOptions.disableMod) {

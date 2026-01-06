@@ -92,5 +92,5 @@ Thank you, [@Nirewen](https://github.com/Nirewen/), for the icon!
 
 ## 📝 License
 
-Copyright © 2020 - 2024 [cominixo](https://github.com/cominixo/) / [TreyRuffy](https://github.com/TreyRuffy/). <br/>
+Copyright © 2020 - 2026 [cominixo](https://github.com/cominixo/) / [TreyRuffy](https://github.com/TreyRuffy/). <br/>
 BetterF3 is [MIT](https://choosealicense.com/licenses/mit/) licensed.
