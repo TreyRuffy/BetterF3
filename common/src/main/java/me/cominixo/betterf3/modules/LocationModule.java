@@ -155,7 +155,7 @@ public class LocationModule extends BaseModule {
       }
 
       // Local Difficulty
-      if (blockPos.getY() >= 0 && blockPos.getY() < 256) {
+      if (serverWorld.isInsideBuildHeight(blockPos.getY())) {
         final float moonSize;
         final long inhabitedTime;
 
