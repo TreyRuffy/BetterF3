@@ -1,24 +1,17 @@
 package me.cominixo.betterf3.mixin;
 
-import me.cominixo.betterf3.config.GeneralOptions;
 import me.cominixo.betterf3.config.gui.ModConfigScreen;
 import net.minecraft.client.KeyboardHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.input.KeyEvent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.util.Mth;
-import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import static me.cominixo.betterf3.utils.Utils.START_X_POS;
-import static me.cominixo.betterf3.utils.Utils.closingAnimation;
-import static me.cominixo.betterf3.utils.Utils.xPos;
 
 /**
  * Modifies the debug keys (f3 / f3 + m).
@@ -53,36 +46,6 @@ public abstract class KeyboardMixin {
       }
       cir.setReturnValue(true);
     }
-  }
-
-  @Inject(method = "keyPress", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/gui/components/debug/DebugScreenEntryList;toggleDebugOverlay()V", opcode = Opcodes.PUTFIELD, ordinal = 0), cancellable = true)
-  private synchronized void animationAndAlwaysEnableProfiler(final long l, final int i, final KeyEvent keyEvent, final CallbackInfo ci) {
-    if (GeneralOptions.disableMod) {
-      return;
-    }
-    if (GeneralOptions.enableAnimations) {
-      if (this.minecraft.debugEntries.isOverlayVisible()) {
-        closingAnimation = true;
-        ci.cancel();
-      } else {
-        closingAnimation = false;
-        xPos = START_X_POS;
-        this.minecraft.debugEntries.setOverlayVisible(true);
-      }
-    } else {
-      this.minecraft.debugEntries.toggleDebugOverlay();
-    }
-    if (GeneralOptions.alwaysEnableProfiler) {
-      this.minecraft.getDebugOverlay().renderProfilerChart = this.minecraft.getDebugOverlay().showDebugScreen();
-    }
-    if (GeneralOptions.alwaysEnableTPS) {
-      this.minecraft.getDebugOverlay().renderFpsCharts = this.minecraft.getDebugOverlay().showDebugScreen();
-    }
-    if (GeneralOptions.alwaysEnablePing && this.minecraft.getDebugOverlay().showDebugScreen() && !this.minecraft.getDebugOverlay().renderFpsCharts &&
-              !this.minecraft.getDebugOverlay().showNetworkCharts()) {
-      this.minecraft.getDebugOverlay().toggleNetworkCharts();
-    }
-    ci.cancel();
   }
 
 }

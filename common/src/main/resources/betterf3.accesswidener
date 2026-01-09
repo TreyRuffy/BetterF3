@@ -7,3 +7,4 @@ accessible field net/minecraft/client/gui/components/debug/DebugEntryHeightmap H
 accessible field net/minecraft/client/gui/components/DebugScreenOverlay renderFpsCharts Z
 accessible field net/minecraft/client/gui/components/DebugScreenOverlay renderProfilerChart Z
 accessible method net/minecraft/client/gui/components/debug/DebugScreenEntries register (Ljava/lang/String;Lnet/minecraft/client/gui/components/debug/DebugScreenEntry;)Lnet/minecraft/resources/Identifier;
+accessible field net/minecraft/client/gui/components/debug/DebugScreenEntryList isOverlayVisible Z

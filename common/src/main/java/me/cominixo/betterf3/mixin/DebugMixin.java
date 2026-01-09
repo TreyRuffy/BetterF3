@@ -122,8 +122,9 @@ public abstract class DebugMixin {
         xPos = (int) (xPos * GeneralOptions.animationSpeed);
 
         if (xPos >= 300) {
-          this.minecraft.debugEntries.setOverlayVisible(false);
           closingAnimation = false;
+          this.minecraft.debugEntries.isOverlayVisible = false;
+          this.minecraft.debugEntries.rebuildCurrentList();
         }
 
       }

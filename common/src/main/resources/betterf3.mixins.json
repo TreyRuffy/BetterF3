@@ -5,6 +5,7 @@
   "minVersion": "0.8",
   "client": [
     "DebugMixin",
+    "DebugScreenEntryListMixin",
     "KeyboardMixin",
     "autof3.DebugOptionMixin",
     "bossbar.BossbarMixin",
