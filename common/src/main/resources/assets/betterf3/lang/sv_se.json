@@ -97,7 +97,7 @@
   "debug.betterf3.cycle_simulationdistance.message": "Simuleringsavstånd: %s",
   "debug.betterf3.cycle_renderdistance.help": "F3 + F = Cycle render distance (shift to invert)",
   "debug.betterf3.cycle_simulationdistance.help": "F3 + F + Ctrl = Cycle simulation distance (shift to invert)",
-  "debug.betterf3.modmenu.help": "F3 + M = BetterF3 Options",
+  "debug.betterf3.modmenu.help": "",
   "text.betterf3.module.minecraft": "Minecraft",
   "text.betterf3.module.fps": "FPS",
   "text.betterf3.module.graphics": "Grafik",
