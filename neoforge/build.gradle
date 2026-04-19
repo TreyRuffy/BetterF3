@@ -87,6 +87,7 @@ unifiedPublishing {
         displayName.set("BetterF3 NeoForge v${project.version} (${project.supported_minecraft_versions})")
         version = project.version
         changelog = releaseChangelog()
+        releaseType.set(project.releaseType)
         List<String> mcVersions = project.supported_minecraft_versions_list.split(",")
         gameVersions.set(mcVersions)
         gameLoaders = ["neoforge"]
@@ -105,8 +106,7 @@ unifiedPublishing {
             curseforge {
                 token.set(CURSE_API_KEY)
                 id = rootProject.curseforge_id
-                gameVersions.addAll ("Java 25")
-                releaseType = "beta"
+                gameVersions.addAll("Java 25")
             }
         }
 
@@ -115,7 +115,6 @@ unifiedPublishing {
             modrinth {
                 token.set(MODRINTH_TOKEN)
                 id = rootProject.modrinth_id
-                releaseType = project.releaseType
             }
         }
     }

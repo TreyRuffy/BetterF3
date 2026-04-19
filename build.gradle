@@ -4,7 +4,6 @@ import java.text.SimpleDateFormat
 
 plugins {
     id "architectury-plugin" version "3.5-SNAPSHOT"
-    id "dev.architectury.loom" version "1.14-SNAPSHOT" apply false
     id "dev.architectury.loom-no-remap" version "1.14-SNAPSHOT" apply false
     id "com.diffplug.spotless" version "7.2.1" apply false
     id "net.kyori.indra" version "3.2.0"
@@ -19,8 +18,7 @@ architectury {
 }
 
 subprojects {
-    def useNoRemap = rootProject.minecraft_version.startsWith("26.")
-    apply plugin: useNoRemap ? "dev.architectury.loom-no-remap" : "dev.architectury.loom"
+    apply plugin: "dev.architectury.loom-no-remap"
     apply plugin: "net.ltgt.errorprone"
     apply plugin: "me.shedaniel.unified-publishing"
 
@@ -30,9 +28,6 @@ subprojects {
 
     dependencies {
         minecraft "com.mojang:minecraft:${rootProject.minecraft_version}"
-        if (!useNoRemap) {
-            mappings loom.officialMojangMappings()
-        }
         compileOnly "org.jspecify:jspecify:1.0.0"
         testCompileOnly "org.jspecify:jspecify:1.0.0"
         errorprone "com.google.errorprone:error_prone_core:2.49.0"
@@ -88,9 +83,7 @@ allprojects {
 
     version = rootProject.mod_version
     group = rootProject.maven_group
-    base {
-        archivesName = rootProject.archives_base_name
-    }
+    base.archivesName = rootProject.archives_base_name
     indra {
         mitLicense()
         checkstyle("13.4.0")

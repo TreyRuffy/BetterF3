@@ -33,7 +33,7 @@ config = "betterf3.mixins.json"
 [[dependencies.betterf3]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[26.1.2,)"
+versionRange = "[26.1,)"
 ordering = "NONE"
 side = "BOTH"
 

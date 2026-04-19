@@ -102,7 +102,7 @@ public abstract class DebugMixin {
     /**
      * Modifies the font scale.
      *
-     * @param context Draw Context
+     * @param graphics Draw Context
      * @param ci Callback info
      */
     @Inject(
@@ -113,9 +113,9 @@ public abstract class DebugMixin {
                             target =
                                     "Lnet/minecraft/client/gui/components/debug/DebugScreenEntryList;getCurrentlyEnabled()Ljava/util/Collection;",
                             shift = At.Shift.AFTER))
-    public void renderFontScaleBefore(final GuiGraphicsExtractor context, final CallbackInfo ci) {
+    public void renderFontScaleBefore(final GuiGraphicsExtractor graphics, final CallbackInfo ci) {
         if (!GeneralOptions.disableMod && this.minecraft.debugEntries.isOverlayVisible()) {
-            context.pose().scale((float) GeneralOptions.fontScale, (float) GeneralOptions.fontScale);
+            graphics.pose().scale((float) GeneralOptions.fontScale, (float) GeneralOptions.fontScale);
         }
     }
 

@@ -34,26 +34,30 @@ public abstract class FabricDebugMixin {
     /**
      * Renders the text on either the left or right side of the screen, depending on the {@code bl} parameter.
      *
-     * @param guiGraphics Draw Context
-     * @param list        List of strings
-     * @param bl          If {@code true}, renders on the left side; if {@code false}, renders on the right side.
+     * @param graphics    Draw Context
+     * @param lines       List of strings
+     * @param alignLeft   If {@code true}, renders on the left side; if {@code false}, renders on the right side.
      * @param ci          Callback info
      */
     @Inject(method = "extractLines", at = @At("HEAD"), cancellable = true)
     public void drawText(
-            final GuiGraphicsExtractor guiGraphics, final List<String> list, final boolean bl, final CallbackInfo ci) {
+            final GuiGraphicsExtractor graphics,
+            final List<String> lines,
+            final boolean alignLeft,
+            final CallbackInfo ci) {
 
         if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isOverlayVisible()) {
             return;
         }
 
-        if (bl) {
-            final List<Component> leftList = DebugRenderer.newText(this.minecraft, true, list, Collections.emptyList());
-            DebugRenderer.drawLeftText(leftList, guiGraphics, this.minecraft, this.font, null);
+        if (alignLeft) {
+            final List<Component> leftList =
+                    DebugRenderer.newText(this.minecraft, true, lines, Collections.emptyList());
+            DebugRenderer.drawLeftText(leftList, graphics, this.minecraft, this.font, null);
         } else {
             final List<Component> rightList =
-                    DebugRenderer.newText(this.minecraft, false, Collections.emptyList(), list);
-            DebugRenderer.drawRightText(rightList, guiGraphics, this.minecraft, this.font, null);
+                    DebugRenderer.newText(this.minecraft, false, Collections.emptyList(), lines);
+            DebugRenderer.drawRightText(rightList, graphics, this.minecraft, this.font, null);
         }
 
         ci.cancel();

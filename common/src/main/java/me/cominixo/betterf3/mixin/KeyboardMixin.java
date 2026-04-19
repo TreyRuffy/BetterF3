@@ -24,7 +24,7 @@ public abstract class KeyboardMixin {
     private Minecraft minecraft;
 
     @Shadow
-    protected abstract void debugFeedbackComponent(Component arg);
+    protected abstract void debugFeedbackComponent(Component component);
 
     /**
      * Adds the config menu by pressing f3 + m.
