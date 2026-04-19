@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Start het debug menu automatisch wanneer het spel start.",
   "config.betterf3.space_modules": "Ruimte Modules",
   "config.betterf3.space_modules.tooltip": "Voegt een ruimte toe na elk module.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Schaduw Tekst",
   "config.betterf3.shadow_text.tooltip": "Geeft elk teken een schaduw effect.",
   "config.betterf3.animations": "Voeg animaties toe",

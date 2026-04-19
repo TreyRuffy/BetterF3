@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Pornește automat meniul de depanare la pornirea jocului.",
   "config.betterf3.space_modules": "Spațiul modulelor",
   "config.betterf3.space_modules.tooltip": "Adaugă un spațiu după fiecare modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Umbra Textului",
   "config.betterf3.shadow_text.tooltip": "Face ca toate caracterele să aibă un efect de umbră.",
   "config.betterf3.animations": "Activează animațiile",

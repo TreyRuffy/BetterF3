@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Tự động khởi động trình đơn gỡ lỗi khi trò chơi bắt đầu.",
   "config.betterf3.space_modules": "Mô-đun dấu cách",
   "config.betterf3.space_modules.tooltip": "Thêm một dấu cách sau mỗi mô-đun.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Bóng Văn bản",
   "config.betterf3.shadow_text.tooltip": "Làm cho tất cả các ký tự có hiệu ứng đổ bóng.",
   "config.betterf3.animations": "Bật hoạt ảnh",

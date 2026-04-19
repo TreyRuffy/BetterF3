@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Automatiškai paleidžia derinimo meniu, kai pradedama žaisti.",
   "config.betterf3.space_modules": "Kosminės erdvės moduliai",
   "config.betterf3.space_modules.tooltip": "Tarpas pridedamas po kiekvieno modulio.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Šešėlių tekstas",
   "config.betterf3.shadow_text.tooltip": "Visoms raidėms suteikia šešėlio efektą.",
   "config.betterf3.animations": "Įjungti animacijas",

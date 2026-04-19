@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Käynnistää virheenkorjausvalikon pelin mukana.",
   "config.betterf3.space_modules": "Välilyöntimoduulit",
   "config.betterf3.space_modules.tooltip": "Lisää väli jokaisen moduulin jälkeen.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Varjon Tektsi",
   "config.betterf3.shadow_text.tooltip": "Tekee kaikille merkeille varjoefektin.",
   "config.betterf3.animations": "Animaatiot",

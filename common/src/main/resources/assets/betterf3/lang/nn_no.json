@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Starter automatisk feilsøkingsmenyen når spillet starter.",
   "config.betterf3.space_modules": "Mellomrom moduler",
   "config.betterf3.space_modules.tooltip": "Legger til et mellomrom etter hver modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Skygge tekst",
   "config.betterf3.shadow_text.tooltip": "Gir alle tegn en skyggeeffekt.",
   "config.betterf3.animations": "Aktiver animasjoner",

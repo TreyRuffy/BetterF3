@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "游戏启动时，自动启动调试菜单。",
   "config.betterf3.space_modules": "隔开各模块",
   "config.betterf3.space_modules.tooltip": "每个模块后，添加一个空格。",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "文本阴影",
   "config.betterf3.shadow_text.tooltip": "给所有字符添加阴影效果。",
   "config.betterf3.animations": "启用动画",

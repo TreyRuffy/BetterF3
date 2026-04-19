@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "منوی رفع اشکال را به صورت خودکار باز می‌کند وقتی که بازی شروع می‌شود.",
   "config.betterf3.space_modules": "فاصله ماژول‌ها",
   "config.betterf3.space_modules.tooltip": "بعد از هر ماژول یک فاصله اضافه می‌کند.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "سایه متن",
   "config.betterf3.shadow_text.tooltip": "تمام کرکترها را دارای سایه متن می‌کند.",
   "config.betterf3.animations": "فعال سازی پویانمایی",

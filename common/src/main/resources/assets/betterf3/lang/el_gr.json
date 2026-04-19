@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Automatically starts the debug menu when the game starts.",
   "config.betterf3.space_modules": "Space Modules",
   "config.betterf3.space_modules.tooltip": "Adds a space after each module.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Shadow Text",
   "config.betterf3.shadow_text.tooltip": "Makes all characters have a shadow effect.",
   "config.betterf3.animations": "Enable Animations",

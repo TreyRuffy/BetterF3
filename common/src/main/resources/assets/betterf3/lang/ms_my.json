@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Mulakan menu nyahpepijat secara automatik apabila permainan dimulakan.",
   "config.betterf3.space_modules": "Modul Jarak",
   "config.betterf3.space_modules.tooltip": "Tambah sebuah jarak selepas setiap modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Bayang Teks",
   "config.betterf3.shadow_text.tooltip": "Membuatkan semua aksara mempunyai kesan bayang.",
   "config.betterf3.animations": "Dayakan Animasi",

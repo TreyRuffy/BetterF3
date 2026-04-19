@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "הפעלה אוטומטית של תפריט הניפוי כאשר המשחק מתחיל.",
   "config.betterf3.space_modules": "מודולי מרחב",
   "config.betterf3.space_modules.tooltip": "מוסיף רווח אחרי כל מודול.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "הצלל טקסט",
   "config.betterf3.shadow_text.tooltip": "גורם להצללה של כל האותיות.",
   "config.betterf3.animations": "אפשר הנפשות",

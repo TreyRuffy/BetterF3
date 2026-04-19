@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Awtomatically startz teh debeg menyu wen da gaem starats.",
   "config.betterf3.space_modules": "Space Modules",
   "config.betterf3.space_modules.tooltip": "Adds a space after each module.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Shadow Text",
   "config.betterf3.shadow_text.tooltip": "Mwakes all da letturs have spoopy shaddwow effett.",
   "config.betterf3.animations": "Enable Animations",

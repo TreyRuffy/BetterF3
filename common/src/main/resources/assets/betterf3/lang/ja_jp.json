@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "ゲーム開始時にデバッグ画面を自動的に表示します。",
   "config.betterf3.space_modules": "モジュールの間隔を空ける",
   "config.betterf3.space_modules.tooltip": "各モジュールの下にスペースを追加します。",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "テキストの陰影",
   "config.betterf3.shadow_text.tooltip": "全ての文字に影を付けて目立たせます。",
   "config.betterf3.animations": "アニメーションの有効化",

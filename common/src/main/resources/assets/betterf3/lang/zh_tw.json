@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "遊戲啟動時自動開啟除錯選單。",
   "config.betterf3.space_modules": "間隔模組",
   "config.betterf3.space_modules.tooltip": "在每個模組間留出間隔。",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "文字陰影",
   "config.betterf3.shadow_text.tooltip": "讓字型有陰影效果。",
   "config.betterf3.animations": "啟用動畫",

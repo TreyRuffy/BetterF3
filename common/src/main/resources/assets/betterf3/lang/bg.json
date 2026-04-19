@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Автоматично стартира менюто за отстраняване на грешки при стартиране на играта.",
   "config.betterf3.space_modules": "интервални модули",
   "config.betterf3.space_modules.tooltip": "Добави интервал след всеки модул.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Скрит Текст",
   "config.betterf3.shadow_text.tooltip": "Кара всички герои да имат ефект на сянка.",
   "config.betterf3.animations": "Активирай анимациите",

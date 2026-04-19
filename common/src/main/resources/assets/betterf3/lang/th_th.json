@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "เริ่มเมนูดีบักโดยอัตโนมัติเมื่อเริ่มเกม",
   "config.betterf3.space_modules": "โมดูลปล่าว",
   "config.betterf3.space_modules.tooltip": "เพิ่มช่องว่างหลังแต่ละโมดูล",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "ข้อความเงา",
   "config.betterf3.shadow_text.tooltip": "ทำให้ตัวหนังสือทั้งหมดมีเอฟเฟ็กค์เงา",
   "config.betterf3.animations": "เปิดใช้งานภาพเคลื่อนไหว",

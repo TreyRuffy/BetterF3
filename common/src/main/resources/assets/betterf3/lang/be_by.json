@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Аўтаматычна ўключае экран адладкі пры пачатку гульні.",
   "config.betterf3.space_modules": "Падзяліць модулі",
   "config.betterf3.space_modules.tooltip": "Дадае прабел пасля кожнага модуля.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Цень тэксту",
   "config.betterf3.shadow_text.tooltip": "Дадае цень усім сімвалам.",
   "config.betterf3.animations": "Уключыць анімацыі",

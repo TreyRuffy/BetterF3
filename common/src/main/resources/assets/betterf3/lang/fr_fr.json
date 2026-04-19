@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Démarre automatiquement le menu de débogage lorsque le jeu démarre.",
   "config.betterf3.space_modules": "Espace de modules",
   "config.betterf3.space_modules.tooltip": "Ajoute un espace après chaque module.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Texte ombré",
   "config.betterf3.shadow_text.tooltip": "Donne un effet d'ombre à chaque caractère.",
   "config.betterf3.animations": "Activer les animations",

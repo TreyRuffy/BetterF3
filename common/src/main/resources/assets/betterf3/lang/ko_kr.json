@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "게임이 시작되면 디버그 메뉴를 자동으로 시작해요.",
   "config.betterf3.space_modules": "모듈 공백",
   "config.betterf3.space_modules.tooltip": "각 모듈 뒤에 여백을 추가해요.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "그림자 문자",
   "config.betterf3.shadow_text.tooltip": "모든 문자에 그림자 효과를 만들어요.",
   "config.betterf3.animations": "애니메이션 사용",

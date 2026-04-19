@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Startet automatisch das F3-Menü beim Spielstart.",
   "config.betterf3.space_modules": "Modulabstände",
   "config.betterf3.space_modules.tooltip": "Fügt nach jedem Modul einen Abstand hinzu.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Textschatten",
   "config.betterf3.shadow_text.tooltip": "Aktiviert einen Textschatten für alle Buchstaben.",
   "config.betterf3.animations": "Animationen aktivieren",

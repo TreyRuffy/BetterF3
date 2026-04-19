@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Munculkan menu debug secara otomatis saat mulai permainan.",
   "config.betterf3.space_modules": "Spasi Modul",
   "config.betterf3.space_modules.tooltip": "Menambahkan spasi setelah setiap modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Bayangan Teks",
   "config.betterf3.shadow_text.tooltip": "Jadikan semua huruf memiliki efek bayangan.",
   "config.betterf3.animations": "Nyalakan Animasi",

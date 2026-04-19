@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Уен кушылганда төзәтү менюсын автоматик рәвештә куша.",
   "config.betterf3.space_modules": "Модулләрне бүлү",
   "config.betterf3.space_modules.tooltip": "Һәр модульдән соң буш араны өсти.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Текст күләгәсе",
   "config.betterf3.shadow_text.tooltip": "Барлык хәрефләргә күләгәләрне өсти.",
   "config.betterf3.animations": "Анимация",

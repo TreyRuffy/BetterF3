@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "يتم بدء قائمة تصحيح الأخطاء آليا عند بدء اللعبة.",
   "config.betterf3.space_modules": "وحدات المساحة",
   "config.betterf3.space_modules.tooltip": "يضيف مساحة بعد كل وحدة.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "ظل النص",
   "config.betterf3.shadow_text.tooltip": "جعل كل الأحرف لها تأثير ظل.",
   "config.betterf3.animations": "تفعيل الحركات",

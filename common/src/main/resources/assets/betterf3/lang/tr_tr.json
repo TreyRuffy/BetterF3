@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Oyun başladığında otomatik olarak hata ayıklama menüsünü açar.",
   "config.betterf3.space_modules": "Alan modülleri",
   "config.betterf3.space_modules.tooltip": "Her modülün ardından boşluk ekler.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Gölge Metin",
   "config.betterf3.shadow_text.tooltip": "Bütün karakterlerin gölge efektine sahip olmasını sağlar.",
   "config.betterf3.animations": "Animasyonları Etkinleştir",

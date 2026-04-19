@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Inicia automaticamente o menu F3 quando o jogo começar.",
   "config.betterf3.space_modules": "Espaço entre Módulos",
   "config.betterf3.space_modules.tooltip": "Adiciona um espaço após cada módulo.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Sombra no Texto",
   "config.betterf3.shadow_text.tooltip": "Faz com que todos os caracteres tenham um efeito de sombra.",
   "config.betterf3.animations": "Ativar Animações",

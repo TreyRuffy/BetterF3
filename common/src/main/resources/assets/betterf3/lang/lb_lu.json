@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Startet den Debug-Menü automatesch wann'd Spill ugeet.",
   "config.betterf3.space_modules": "Modul Distanzen",
   "config.betterf3.space_modules.tooltip": "Mecht een espace no all Modul dobai.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Schiedentext",
   "config.betterf3.shadow_text.tooltip": "Gëtt all Zeeche kee liichte Schied, fir et besser liesbar ze maachen.",
   "config.betterf3.animations": "Animatiounen aktivéieren",

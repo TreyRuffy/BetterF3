@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "˙sʇɹɐʇs ǝɯɐᵷ ǝɥʇ uǝɥʍ nuǝɯ ᵷnqǝp ǝɥʇ sʇɹɐʇs ʎꞁꞁɐɔᴉʇɐɯoʇnⱯ",
   "config.betterf3.space_modules": "sǝꞁnpoW ǝɔɐdS",
   "config.betterf3.space_modules.tooltip": "˙ǝꞁnpoɯ ɥɔɐǝ ɹǝʇɟɐ ǝɔɐds ɐ sppⱯ",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "ʇxǝ⟘ ʍopɐɥS",
   "config.betterf3.shadow_text.tooltip": "˙ʇɔǝɟɟǝ ʍopɐɥs ɐ ǝʌɐɥ sɹǝʇɔɐɹɐɥɔ ꞁꞁɐ sǝʞɐW",
   "config.betterf3.animations": "suoᴉʇɐɯᴉuⱯ ǝꞁqɐuƎ",

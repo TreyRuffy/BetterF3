@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Inicia automáticamente el menú de depuración cuando se inicia el juego.",
   "config.betterf3.space_modules": "Espacio de módulos",
   "config.betterf3.space_modules.tooltip": "Añade un espacio después de cada módulo.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Sombra del texto",
   "config.betterf3.shadow_text.tooltip": "Hace que todos los caracteres tengan un efecto de sombra.",
   "config.betterf3.animations": "Habilitar animaciones",

@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Автоматично відкривати меню налагодження, коли гра запускається.",
   "config.betterf3.space_modules": "Простір між модулями",
   "config.betterf3.space_modules.tooltip": "Додавати відступ після кожного модуля.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Тінь в тексті",
   "config.betterf3.shadow_text.tooltip": "Додати ефект тіні до всіх символів.",
   "config.betterf3.animations": "Увімкнути анімацію",

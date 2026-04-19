@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Startar felsökningsmenyn automatiskt när spelet startar.",
   "config.betterf3.space_modules": "Rymdmoduler",
   "config.betterf3.space_modules.tooltip": "Lägger till ett mellanrum efter varje modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Skuggtext",
   "config.betterf3.shadow_text.tooltip": "Det får alla tecken att ha en skuggeffekt.",
   "config.betterf3.animations": "Aktivera animationer",

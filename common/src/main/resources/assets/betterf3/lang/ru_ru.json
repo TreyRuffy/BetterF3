@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Автоматически открывать экран отладки при входе в мир.",
   "config.betterf3.space_modules": "Разделить модули",
   "config.betterf3.space_modules.tooltip": "Добавить отступ после каждого модуля.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Тень текста",
   "config.betterf3.shadow_text.tooltip": "Добавить эффект тени к символам.",
   "config.betterf3.animations": "Включить анимацию",

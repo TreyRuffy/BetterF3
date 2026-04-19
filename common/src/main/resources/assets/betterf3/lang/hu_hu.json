@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Automatikusan megnyitja az F3 debug menüt, amikor a játék elindul.",
   "config.betterf3.space_modules": "Modulok közti hely",
   "config.betterf3.space_modules.tooltip": "Hozzáad egy üres területet minden modul után.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Árnyékos szöveg",
   "config.betterf3.shadow_text.tooltip": "Minden karakternek lesz egy árnyék hatása.",
   "config.betterf3.animations": "Animációk bekapcsolása",

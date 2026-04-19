@@ -19,6 +19,8 @@
   "config.betterf3.auto_start.tooltip": "Při spuštění hry automaticky spustí nabídku ladění.",
   "config.betterf3.space_modules": "Oddělit moduly",
   "config.betterf3.space_modules.tooltip": "Přidá mezeru za každý modul.",
+  "config.betterf3.performance_optimizations": "Performance Optimizations",
+  "config.betterf3.performance_optimizations.tooltip": "Cache module lines and only refresh when values change.",
   "config.betterf3.shadow_text": "Text se stínem",
   "config.betterf3.shadow_text.tooltip": "Všechny znaky mají stínový efekt.",
   "config.betterf3.animations": "Zapnout animace",
