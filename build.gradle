@@ -69,8 +69,9 @@ subprojects {
                 if (!line.startsWith("!"))
                     changelogBuilder.append(line).append("\n")
             }
-            if (!rootProject.buildDir.exists()) rootProject.buildDir.mkdirs()
-            new File(rootProject.buildDir, "CHANGELOG.md").text = changelogBuilder.toString().trim()
+            def buildDir = layout.buildDirectory.asFile.get()
+            if (!buildDir.exists()) buildDir.mkdirs()
+            new File(buildDir, "CHANGELOG.md").text = changelogBuilder.toString().trim()
             return changelogBuilder.toString().trim()
         }
     }
