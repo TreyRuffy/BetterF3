@@ -46,18 +46,15 @@ public class EmptyModule extends BaseModule {
 
     @Override
     public void update(final Minecraft client) {
-        final int loopLines = this.emptyLines != this.displayedLines ? 20 : this.displayedLines;
+        final int clampedEmptyLines = Math.min(this.emptyLines, 20);
+        final int loopLines = clampedEmptyLines != this.displayedLines ? 20 : this.displayedLines;
         for (int i = 0; i < loopLines; i++) {
             lines.get(i).value("");
-            if (this.displayedLines < i) {
-                lines.get(i).active = false;
-            }
+            lines.get(i).active = i < clampedEmptyLines;
         }
         if (loopLines == 20) {
-            if (this.emptyLines > 20) {
-                this.emptyLines = 20;
-            }
-            this.displayedLines = this.emptyLines;
+            this.emptyLines = clampedEmptyLines;
+            this.displayedLines = clampedEmptyLines;
         }
     }
 

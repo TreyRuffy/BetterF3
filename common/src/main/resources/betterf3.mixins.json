@@ -9,7 +9,6 @@
     "KeyboardMixin",
     "autof3.DebugOptionMixin",
     "bossbar.BossbarMixin",
-    "chunk.ChunkBuilderMixin",
     "chunk.ClientChunkManagerMixin",
     "chunk.ClientChunkMapMixin",
     "scoreboard.ScoreboardMixin"

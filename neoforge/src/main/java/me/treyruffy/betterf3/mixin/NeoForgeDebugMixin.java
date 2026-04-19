@@ -52,12 +52,12 @@ public abstract class NeoForgeDebugMixin {
 
         if (alignLeft) {
             final List<Component> leftList =
-                    DebugRenderer.newText(this.minecraft, true, Collections.emptyList(), Collections.emptyList());
-            DebugRenderer.drawLeftText(leftList, graphics, this.minecraft, this.font, Collections.emptyList());
+                    DebugRenderer.newText(this.minecraft, true, lines, Collections.emptyList());
+            DebugRenderer.drawLeftText(leftList, graphics, this.minecraft, this.font, null);
         } else {
             final List<Component> rightList =
-                    DebugRenderer.newText(this.minecraft, false, Collections.emptyList(), Collections.emptyList());
-            DebugRenderer.drawRightText(rightList, graphics, this.minecraft, this.font, Collections.emptyList());
+                    DebugRenderer.newText(this.minecraft, false, Collections.emptyList(), lines);
+            DebugRenderer.drawRightText(rightList, graphics, this.minecraft, this.font, null);
         }
 
         ci.cancel();

@@ -45,18 +45,30 @@ public abstract class DebugMixin {
     @Unique
     private static final List<Identifier> BETTERF3_LIST = List.of(BETTERF3_RESOURCE);
 
+    @Unique
+    private boolean betterf3$posePushed;
+
     /**
      * Ensures that the TPS graph works.
      *
-     * @param context Draw Context
+     * @param graphics Draw Context
      * @param ci Callback info
      */
     @Inject(method = "extractRenderState", at = @At(value = "HEAD"))
-    public void renderBefore(final GuiGraphicsExtractor context, final CallbackInfo ci) {
+    public void renderBefore(final GuiGraphicsExtractor graphics, final CallbackInfo ci) {
         if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isOverlayVisible()) {
             return;
         }
-        context.pose().pushMatrix();
+        this.betterf3$posePushed = true;
+        graphics.pose().pushMatrix();
+    }
+
+    @Inject(method = "extractRenderState", at = @At("TAIL"))
+    private void renderAfter(final GuiGraphicsExtractor graphics, final CallbackInfo ci) {
+        if (this.betterf3$posePushed) {
+            graphics.pose().popMatrix();
+            this.betterf3$posePushed = false;
+        }
     }
 
     @Redirect(

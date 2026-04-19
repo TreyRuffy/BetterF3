@@ -145,8 +145,6 @@ public final class DebugRenderer {
                 guiGraphics.text(font, list.get(i), windowWidth, y, 0xFFE0E0E0, GeneralOptions.shadowText);
             }
         }
-
-        guiGraphics.pose().popMatrix();
     }
 
     /**

@@ -16,6 +16,10 @@ on:
     branches:
       - 'architectury/**'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   crowdin-tasks:
     runs-on: ubuntu-latest
