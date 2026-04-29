@@ -32,7 +32,7 @@ public class BossbarMixin {
     public void init(final GuiGraphicsExtractor graphics, final CallbackInfo info) {
         if (!GeneralOptions.disableMod
                 && GeneralOptions.hideBossbar
-                && this.minecraft.getDebugOverlay().showDebugScreen()) {
+                && this.minecraft.debugEntries.isOverlayVisible()) {
             info.cancel();
         }
     }
