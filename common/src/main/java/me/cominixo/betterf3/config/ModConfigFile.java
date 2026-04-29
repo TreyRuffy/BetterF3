@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.List;
 import me.cominixo.betterf3.modules.BaseModule;
 import me.cominixo.betterf3.modules.EmptyModule;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * The Mod config file.
@@ -20,6 +22,8 @@ public final class ModConfigFile {
         // Do nothing
     }
 
+    private static final Logger LOGGER = LogManager.getLogger(ModConfigFile.class);
+
     private static FileType storedFileType = FileType.JSON;
 
     /**
@@ -29,7 +33,10 @@ public final class ModConfigFile {
         final Path path = Paths.get(storedFileType == FileType.JSON ? "config/betterf3.json" : "config/betterf3.toml");
 
         final File file = path.toFile();
-        if (!file.exists() && !file.getParentFile().mkdirs()) return;
+        final File parent = file.getParentFile();
+        if (parent != null && !parent.exists()) {
+            parent.mkdirs();
+        }
 
         try (final FileConfig config =
                 FileConfig.builder(path).concurrent().autosave().build()) {
@@ -63,6 +70,8 @@ public final class ModConfigFile {
             config.set("modules_left", configsLeft);
             config.set("modules_right", configsRight);
             config.set("general", general);
+        } catch (final RuntimeException ex) {
+            LOGGER.warn("Failed to save BetterF3 config to {}: {}", path, ex.getMessage(), ex);
         }
         BaseModule.markAllDirty();
     };
@@ -76,7 +85,8 @@ public final class ModConfigFile {
 
         storedFileType = filetype;
 
-        final File file = new File(storedFileType == FileType.JSON ? "config/betterf3.json" : "config/betterf3.toml");
+        final Path path = Paths.get(storedFileType == FileType.JSON ? "config/betterf3.json" : "config/betterf3.toml");
+        final File file = path.toFile();
 
         if (!file.exists()) {
             return;
@@ -169,6 +179,8 @@ public final class ModConfigFile {
                 GeneralOptions.alwaysEnablePing = general.getOrElse("always_show_ping", false);
                 GeneralOptions.enablePerformanceOptimizations = general.getOrElse("performance_optimizations", true);
             }
+        } catch (final RuntimeException ex) {
+            LOGGER.warn("Failed to load BetterF3 config from {}: {}", path, ex.getMessage(), ex);
         }
         BaseModule.markAllDirty();
     }
