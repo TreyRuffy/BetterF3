@@ -64,7 +64,7 @@ subprojects {
                 if (!line.startsWith("!"))
                     changelogBuilder.append(line).append("\n")
             }
-            def buildDir = layout.buildDirectory.asFile.get()
+            def buildDir = rootProject.layout.buildDirectory.asFile.get()
             if (!buildDir.exists()) buildDir.mkdirs()
             new File(buildDir, "CHANGELOG.md").text = changelogBuilder.toString().trim()
             return changelogBuilder.toString().trim()
