@@ -101,10 +101,7 @@ public final class ModulesScreen extends Screen {
                 .build();
         this.deleteButton = this.addRenderableWidget(deleteButtonWidget);
 
-        final Button doneButton = Button.builder(Component.translatable("config.betterf3.modules.done_button"), _ -> {
-                    this.onClose();
-                    minecraft.setScreen(this.parent);
-                })
+        final Button doneButton = Button.builder(Component.translatable("config.betterf3.modules.done_button"), _ -> this.onClose())
                 .bounds(this.width / 2 - 154, this.height - 30 + 4, 308, 20)
                 .build();
         this.addRenderableWidget(doneButton);

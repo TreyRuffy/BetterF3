@@ -53,7 +53,7 @@ public class ModConfigScreen extends Screen {
 
         final Button doneButton = Button.builder(
                         Component.translatable("config.betterf3.modules.done_button"),
-                        _ -> client.setScreen(this.parent))
+                        _ -> this.onClose())
                 .bounds(this.width / 2 - 130, this.height - 50, 260, 20)
                 .build();
         this.addRenderableWidget(doneButton);
@@ -68,5 +68,10 @@ public class ModConfigScreen extends Screen {
             final GuiGraphicsExtractor context, final int mouseX, final int mouseY, final float delta) {
         super.extractRenderState(context, mouseX, mouseY, delta);
         context.centeredText(this.font, this.title, this.width / 2, 20, 16777215);
+    }
+
+    @Override
+    public void onClose() {
+        this.minecraft.setScreen(this.parent);
     }
 }

@@ -36,7 +36,7 @@ public abstract class KeyboardMixin {
     public void processF3(final KeyEvent event, final CallbackInfoReturnable<Boolean> cir) {
         final int key = event.key();
         if (key == 77) { // Key m
-            this.minecraft.setScreen(new ModConfigScreen(null));
+            this.minecraft.setScreen(new ModConfigScreen(this.minecraft.screen));
             cir.setReturnValue(true);
         } else if (key == 70) {
             if (event.hasControlDown()) {
