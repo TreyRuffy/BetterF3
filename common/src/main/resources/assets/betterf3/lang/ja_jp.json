@@ -214,6 +214,7 @@
   "text.betterf3.line.gpu": "GPU",
   "text.betterf3.line.gpu_utilization": "GPU使用率",
   "text.betterf3.line.opengl_version": "OpenGLのバージョン",
+  "text.betterf3.line.graphics_api": "Graphics API",
   "text.betterf3.line.gpu_driver": "GPUドライバー",
   "text.betterf3.line.misc_left": "その他(左側)",
   "text.betterf3.line.misc_right": "その他(右側)",

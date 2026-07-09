@@ -214,6 +214,7 @@
   "text.betterf3.line.gpu": "Näytönohjain",
   "text.betterf3.line.gpu_utilization": "GPU:n käyttö",
   "text.betterf3.line.opengl_version": "OpenGL Versio",
+  "text.betterf3.line.graphics_api": "Graphics API",
   "text.betterf3.line.gpu_driver": "GPU Ajuri",
   "text.betterf3.line.misc_left": "Muut Vasemmat",
   "text.betterf3.line.misc_right": "Muut Oikeat",

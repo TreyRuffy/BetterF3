@@ -214,6 +214,7 @@
   "text.betterf3.line.gpu": "GPU",
   "text.betterf3.line.gpu_utilization": "Pemanfaatan GPU",
   "text.betterf3.line.opengl_version": "Versi OpenGL",
+  "text.betterf3.line.graphics_api": "Graphics API",
   "text.betterf3.line.gpu_driver": "Driver GPU",
   "text.betterf3.line.misc_left": "Lain-lain Kiri",
   "text.betterf3.line.misc_right": "Lain-lain Kanan",

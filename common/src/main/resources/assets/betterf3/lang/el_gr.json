@@ -214,6 +214,7 @@
   "text.betterf3.line.gpu": "GPU",
   "text.betterf3.line.gpu_utilization": "GPU Utilization",
   "text.betterf3.line.opengl_version": "Έκδοση OpenGL",
+  "text.betterf3.line.graphics_api": "Graphics API",
   "text.betterf3.line.gpu_driver": "Πρόγραμμα Οδήγησης GPU",
   "text.betterf3.line.misc_left": "Διάφορα Αριστερά",
   "text.betterf3.line.misc_right": "Διάφορα Δεξιά",

@@ -214,6 +214,7 @@
   "text.betterf3.line.gpu": "מעבד גרפי",
   "text.betterf3.line.gpu_utilization": "ניצול מעבד גרפי",
   "text.betterf3.line.opengl_version": "גירסת OpenGL",
+  "text.betterf3.line.graphics_api": "Graphics API",
   "text.betterf3.line.gpu_driver": "GPU Driver",
   "text.betterf3.line.misc_left": "שונות שמאל",
   "text.betterf3.line.misc_right": "שונות ימין",
