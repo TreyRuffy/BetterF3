@@ -1,9 +1,9 @@
 <div style="text-align: center;"><h1 >BetterF3</h1>
 <br />
 
-[![Version](https://img.shields.io/badge/dynamic/json?color=ed37aa&label=Version&query=%24%5B%27promos%27%5D%5B%2726.1.2-latest%27%5D&url=https%3A%2F%2Fapi.modrinth.com%2Fupdates%2Fbetterf3%2Fforge%5Fupdates.json?cacheSeconds=2592000)](https://modrinth.com/mod/betterf3)
-[![Minecraft Versions](https://img.shields.io/badge/Minecraft-1.16.2--26.1.2+-9450cc)](http://files.minecraftforge.net/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-2230f2.svg)](https://github.com/TreyRuffy/BetterF3/blob/architectury/26.1/LICENSE.txt)
+[![Version](https://img.shields.io/badge/dynamic/json?color=ed37aa&label=Version&query=%24%5B%27promos%27%5D%5B%2726.2-latest%27%5D&url=https%3A%2F%2Fapi.modrinth.com%2Fupdates%2Fbetterf3%2Fforge%5Fupdates.json?cacheSeconds=2592000)](https://modrinth.com/mod/betterf3)
+[![Minecraft Versions](https://img.shields.io/badge/Minecraft-1.16.2--26.2+-9450cc)](http://files.minecraftforge.net/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-2230f2.svg)](https://github.com/TreyRuffy/BetterF3/blob/architectury/26.2/LICENSE.txt)
 <br/>
 [![Twitter: TreyRuffy](https://img.shields.io/twitter/follow/TreyRuffy.svg?style=social)](https://twitter.com/TreyRuffy)
 
