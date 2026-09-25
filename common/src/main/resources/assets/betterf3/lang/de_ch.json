@@ -214,7 +214,7 @@
   "text.betterf3.line.gpu": "GPU",
   "text.betterf3.line.gpu_utilization": "GPU Auslastung",
   "text.betterf3.line.opengl_version": "OpenGL-Version",
-  "text.betterf3.line.graphics_api": "Graphics API",
+  "text.betterf3.line.graphics_api": "Grafik-API",
   "text.betterf3.line.gpu_driver": "GPU-Treiber",
   "text.betterf3.line.misc_left": "Sonstiges Links",
   "text.betterf3.line.misc_right": "Sonstiges Rechts",
