@@ -1,5 +1,6 @@
 package me.cominixo.betterf3.mixin;
 
+import com.mojang.blaze3d.platform.InputConstants;
 import me.cominixo.betterf3.config.gui.ModConfigScreen;
 import net.minecraft.client.KeyboardHandler;
 import net.minecraft.client.Minecraft;
@@ -35,10 +36,10 @@ public abstract class KeyboardMixin {
     @Inject(method = "handleDebugKeys", at = @At("HEAD"), cancellable = true)
     public void processF3(final KeyEvent event, final CallbackInfoReturnable<Boolean> cir) {
         final int key = event.key();
-        if (key == 77) { // Key m
+        if (key == InputConstants.KEY_M) {
             this.minecraft.gui.setScreen(new ModConfigScreen(null));
             cir.setReturnValue(true);
-        } else if (key == 70) {
+        } else if (key == InputConstants.KEY_F) {
             if (event.hasControlDown()) {
                 this.minecraft
                         .options
