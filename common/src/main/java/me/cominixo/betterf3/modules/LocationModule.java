@@ -176,7 +176,7 @@ public class LocationModule extends BaseModule {
                 final long inhabitedTime;
 
                 final MoonPhase moonPhase =
-                        serverWorld.environmentAttributes().getDimensionValue(EnvironmentAttributes.MOON_PHASE);
+                        serverWorld.environmentAttributes().getValue(EnvironmentAttributes.MOON_PHASE, blockPos);
                 moonSize = DimensionType.MOON_BRIGHTNESS_PER_PHASE[moonPhase.index()];
 
                 inhabitedTime =
