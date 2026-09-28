@@ -2,7 +2,7 @@ package me.cominixo.betterf3.mixin.scoreboard;
 
 import me.cominixo.betterf3.config.GeneralOptions;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.Hud;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 /**
  * Mixin to cancel sidebar rendering during F3.
  */
-@Mixin(Gui.class)
+@Mixin(Hud.class)
 @SuppressWarnings("NullAway.Init")
 public class ScoreboardMixin {
 

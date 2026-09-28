@@ -1,5 +1,7 @@
 package me.cominixo.betterf3.modules;
 
+import java.util.List;
+import java.util.stream.Collectors;
 import me.cominixo.betterf3.utils.DebugLine;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.CloudStatus;
@@ -55,9 +57,9 @@ public class GraphicsModule extends BaseModule {
         lines.get(3).value(client.options.biomeBlendRadius().get());
 
         // Shader
-        final Identifier shaderEffect = client.gameRenderer.currentPostEffect();
-        if (shaderEffect != null) {
-            lines.get(4).value(String.valueOf(shaderEffect));
+        final List<Identifier> postEffects = client.gameRenderer.getAppliedPostEffects();
+        if (!postEffects.isEmpty()) {
+            lines.get(4).value(postEffects.stream().map(Identifier::toString).collect(Collectors.joining(", ")));
         } else {
             lines.get(4).active = false;
         }
