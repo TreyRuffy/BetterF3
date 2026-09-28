@@ -10,7 +10,7 @@ version = "${version}"
 displayName = "BetterF3"
 updateJSONURL="https://api.modrinth.com/updates/betterf3/forge_updates.json"
 displayURL="https://modrinth.com/mod/betterf3"
-logoFile="icon.png"
+iconFile="icon.png"
 authors = "TreyRuffy and cominixo"
 description = '''
 Better F3 for Minecraft NeoForge
