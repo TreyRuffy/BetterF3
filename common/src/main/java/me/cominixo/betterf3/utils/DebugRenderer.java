@@ -44,14 +44,14 @@ public final class DebugRenderer {
     /**
      * Lets us draw in batches.
      *
-     * @param minecraft   The Minecraft instance
+     * @param screenWidth The debug overlay width
      * @param font        The font renderer
      * @param pos         The position
      * @param list        The list of Text
      * @param guiGraphics The Draw Context
      */
     public static void drawBackground(
-            final Minecraft minecraft,
+            final int screenWidth,
             final Font font,
             final PositionEnum pos,
             final List<Component> list,
@@ -73,7 +73,7 @@ public final class DebugRenderer {
 
             int windowWidth;
             if (pos == PositionEnum.RIGHT) {
-                windowWidth = (int) (minecraft.getWindow().getGuiScaledWidth() / GeneralOptions.fontScale) - 2 - width;
+                windowWidth = (int) (screenWidth / GeneralOptions.fontScale) - 2 - width;
                 if (GeneralOptions.enableAnimations) {
                     windowWidth += xPos;
                 }
@@ -113,14 +113,14 @@ public final class DebugRenderer {
      *
      * @param list        the list of {@link Component}s to draw
      * @param guiGraphics Draw Context
-     * @param minecraft   Minecraft Client
+     * @param screenWidth The debug overlay width
      * @param font        the Font Renderer
      * @param additional  Additional text to draw
      */
     public static void drawRightText(
             final List<Component> list,
             final GuiGraphicsExtractor guiGraphics,
-            final Minecraft minecraft,
+            final int screenWidth,
             final Font font,
             @Nullable final List<String> additional) {
 
@@ -128,15 +128,14 @@ public final class DebugRenderer {
             additional.forEach(text -> list.add(Component.nullToEmpty(text)));
         }
 
-        drawBackground(minecraft, font, PositionEnum.RIGHT, list, guiGraphics);
+        drawBackground(screenWidth, font, PositionEnum.RIGHT, list, guiGraphics);
 
         for (int i = 0; i < list.size(); i++) {
 
             if (!Strings.isNullOrEmpty(list.get(i).getString())) {
                 final int height = 9;
                 final int width = font.width(list.get(i).getString());
-                int windowWidth =
-                        (int) (minecraft.getWindow().getGuiScaledWidth() / GeneralOptions.fontScale) - 2 - width;
+                int windowWidth = (int) (screenWidth / GeneralOptions.fontScale) - 2 - width;
                 if (GeneralOptions.enableAnimations) {
                     windowWidth += xPos;
                 }
@@ -152,21 +151,21 @@ public final class DebugRenderer {
      *
      * @param list        the list of {@link Component}s to draw
      * @param guiGraphics Draw Context
-     * @param minecraft   Minecraft Client
+     * @param screenWidth The debug overlay width
      * @param font        the Font Renderer
      * @param additional  Additional text to draw
      */
     public static void drawLeftText(
             final List<Component> list,
             final GuiGraphicsExtractor guiGraphics,
-            final Minecraft minecraft,
+            final int screenWidth,
             final Font font,
             @Nullable final List<String> additional) {
         if (additional != null) {
             additional.forEach(text -> list.add(Component.nullToEmpty(text)));
         }
 
-        drawBackground(minecraft, font, PositionEnum.LEFT, list, guiGraphics);
+        drawBackground(screenWidth, font, PositionEnum.LEFT, list, guiGraphics);
 
         for (int i = 0; i < list.size(); i++) {
 

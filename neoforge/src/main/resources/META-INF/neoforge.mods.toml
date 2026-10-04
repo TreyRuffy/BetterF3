@@ -10,7 +10,7 @@ version = "${version}"
 displayName = "BetterF3"
 updateJSONURL="https://api.modrinth.com/updates/betterf3/forge_updates.json"
 displayURL="https://modrinth.com/mod/betterf3"
-logoFile="icon.png"
+iconFile="icon.png"
 authors = "TreyRuffy and cominixo"
 description = '''
 Better F3 for Minecraft NeoForge
@@ -33,11 +33,11 @@ config = "betterf3.mixins.json"
 [[dependencies.betterf3]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[26.2,)"
+versionRange = "[26.3,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.betterf3]]
 modId = "cloth_config"
-versionRange = "[26.2.0,)"
+versionRange = "[26.3.0,)"
 mandatory = true

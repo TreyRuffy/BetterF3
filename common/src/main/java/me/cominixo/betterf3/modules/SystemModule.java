@@ -1,10 +1,9 @@
 package me.cominixo.betterf3.modules;
 
 import com.electronwill.nightconfig.core.Config;
-import com.mojang.blaze3d.platform.GLX;
 import com.mojang.blaze3d.platform.Window;
-import com.mojang.blaze3d.systems.GpuDevice;
 import com.mojang.blaze3d.systems.RenderSystem;
+import com.mojang.renderpearl.api.device.GpuDevice;
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.time.LocalDateTime;
@@ -16,6 +15,7 @@ import me.cominixo.betterf3.utils.DebugLine;
 import me.cominixo.betterf3.utils.Utils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.components.debug.DebugEntrySystemSpecs;
 
 /**
  * The System module.
@@ -119,7 +119,7 @@ public class SystemModule extends BaseModule {
                                 : memoryUsage);
         lines.get(3).value(allocationRateStr);
         lines.get(4).value(allocatedMemory);
-        lines.get(5).value(GLX._getCpuInfo());
+        lines.get(5).value(DebugEntrySystemSpecs.getCpuInfo());
         lines.get(6).value(displayInfo);
         lines.get(7).value(gpuDevice.getDeviceInfo().name());
         lines.get(8).value(gpuUtilization);

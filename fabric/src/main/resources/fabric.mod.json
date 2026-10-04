@@ -26,12 +26,12 @@
   },
   "depends": {
     "fabricloader": ">=0.19.0",
-    "minecraft": ">=26.2",
+    "minecraft": ">=26.3",
     "fabric-api": "*",
-    "cloth-config": ">=26.2.0"
+    "cloth-config": ">=26.3.0"
   },
   "recommends": {
-    "modmenu": ">=20.0.0"
+    "modmenu": ">=21.0.0"
   },
   "accessWidener" : "betterf3.accesswidener",
   "mixins": ["betterf3.mixins.json", "betterf3.fabric.mixins.json"]

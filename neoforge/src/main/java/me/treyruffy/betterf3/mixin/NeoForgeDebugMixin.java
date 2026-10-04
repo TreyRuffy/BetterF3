@@ -37,6 +37,7 @@ public abstract class NeoForgeDebugMixin {
      * @param graphics    the draw context
      * @param lines       the list of strings
      * @param alignLeft   the left side
+     * @param width       the debug overlay width
      * @param ci          the callback info
      */
     @Inject(method = "extractLines", at = @At(value = "HEAD"), cancellable = true, order = 2000)
@@ -44,6 +45,7 @@ public abstract class NeoForgeDebugMixin {
             final GuiGraphicsExtractor graphics,
             final List<String> lines,
             final boolean alignLeft,
+            final int width,
             final CallbackInfo ci) {
 
         if (GeneralOptions.disableMod || !this.minecraft.debugEntries.isOverlayVisible()) {
@@ -53,11 +55,11 @@ public abstract class NeoForgeDebugMixin {
         if (alignLeft) {
             final List<Component> leftList =
                     DebugRenderer.newText(this.minecraft, true, lines, Collections.emptyList());
-            DebugRenderer.drawLeftText(leftList, graphics, this.minecraft, this.font, null);
+            DebugRenderer.drawLeftText(leftList, graphics, width, this.font, null);
         } else {
             final List<Component> rightList =
                     DebugRenderer.newText(this.minecraft, false, Collections.emptyList(), lines);
-            DebugRenderer.drawRightText(rightList, graphics, this.minecraft, this.font, null);
+            DebugRenderer.drawRightText(rightList, graphics, width, this.font, null);
         }
 
         ci.cancel();
