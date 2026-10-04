@@ -102,7 +102,7 @@ public abstract class BaseModule implements Comparable<BaseModule> {
     /**
      * Instantiates a new module.
      */
-    BaseModule() {
+    public BaseModule() {
         // Do nothing
     }
 
@@ -111,7 +111,7 @@ public abstract class BaseModule implements Comparable<BaseModule> {
      *
      * @param invisible sets invisibility
      */
-    BaseModule(final boolean invisible) {
+    public BaseModule(final boolean invisible) {
         if (!invisible) {
             allModules.add(this);
         }
